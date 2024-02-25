@@ -1,0 +1,53 @@
+SWI_historical_plan = {
+	name = "Swiss Historical Plan"
+	desc = ""
+
+	allowed = {
+		SWI_bba = yes
+	}
+	enable = {
+		OR = {
+			AND = {
+				is_historical_focus_on = yes 
+				has_game_rule = {
+					rule = SWI_AI_BEHAVIOR
+					option = DEFAULT
+				}
+			}
+			has_country_flag = SWI_AI_RANDOM_HISTORICAL
+			has_game_rule = {
+				rule = SWI_ai_behavior
+				option = HISTORICAL
+			}
+		}	
+	}
+	abort = {
+		is_subject = yes 
+		has_war = yes 
+	}
+
+	ai_national_focuses = {
+	}
+
+	focus_factors = {
+		
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}

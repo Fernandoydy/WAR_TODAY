@@ -1,0 +1,212 @@
+SPR_historical_plan = {
+	name = "Spanish historical plan"
+	desc = "Historical behavior for Nationalist Spain"
+
+	allowed = {
+		original_tag = SPR
+	}
+	enable = {
+		OR = {
+			tag = SPR
+			tag = SPA
+		}
+		OR = {
+			AND = {
+				is_historical_focus_on = yes
+				has_game_rule = {
+					rule = SPR_ai_behavior 
+					option = DEFAULT
+				}
+			}
+			has_country_flag = SPR_AI_RANDOM_NATIONALIST_HISTORICAL
+			has_game_rule = {
+				rule = SPR_ai_behavior 
+				option = NATIONALIST_HISTORICAL
+			}
+		}
+	}
+	abort = {
+		OR = {
+			tag = SPD
+			tag = SPC
+			OR = {
+				has_war_with = ENG
+				has_war_with = GER
+			}
+		}
+		
+	}
+
+	ai_national_focuses = {
+	}
+
+	focus_factors = {
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}
+
+SPR_historical_plan_war_with_allies = {
+	name = "Spanish anti-Allied historical plan"
+	desc = "Historical behavior for Nationalist Spain at war with the Allies"
+
+	allowed = {
+		original_tag = SPR
+	}
+	enable = {
+		OR = {
+			tag = SPR
+			tag = SPA
+		}
+		OR = {
+			AND = {
+				is_historical_focus_on = yes
+				has_game_rule = {
+					rule = SPR_ai_behavior 
+					option = DEFAULT
+				}
+			}
+			has_country_flag = SPR_AI_RANDOM_NATIONALIST_HISTORICAL
+			has_game_rule = {
+				rule = SPR_ai_behavior 
+				option = NATIONALIST_HISTORICAL
+			}
+		}
+		OR = {
+			has_war_with = ENG
+			has_war_with = USA
+		}
+		NOT = { has_war_with = GER }
+	}
+	abort = {
+		OR = {
+			AND = {
+				NOT = { tag = SPR }
+				NOT = { tag = SPA }
+			}
+			AND = {
+				is_historical_focus_on = yes
+				has_game_rule = {
+					rule = SPR_ai_behavior 
+					option = DEFAULT
+				}
+			}
+			has_war_with = GER
+		}
+		
+	}
+
+	ai_national_focuses = {
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}
+
+SPR_historical_plan_war_with_axis = {
+	name = "Spanish anti-Axis historical plan"
+	desc = "Historical behavior for Nationalist Spain at war with the Axis"
+
+	allowed = {
+		original_tag = SPR
+	}
+	enable = {
+		OR = {
+			tag = SPR
+			tag = SPA
+		}
+		OR = {
+			AND = {
+				is_historical_focus_on = yes
+				has_game_rule = {
+					rule = SPR_ai_behavior 
+					option = DEFAULT
+				}
+			}
+			has_country_flag = SPR_AI_RANDOM_NATIONALIST_HISTORICAL
+			has_game_rule = {
+				rule = SPR_ai_behavior 
+				option = NATIONALIST_HISTORICAL
+			}
+		}
+		OR = {
+			has_war_with = GER
+			has_war_with = ITA
+		}
+		NOT = {
+			has_war_with = ENG
+			has_war_with = USA
+		}
+	}
+	abort = {
+		OR = {
+			AND = {
+				NOT = { tag = SPR }
+				NOT = { tag = SPA }
+			}
+			AND = {
+				is_historical_focus_on = yes
+				has_game_rule = {
+					rule = SPR_ai_behavior 
+					option = DEFAULT
+				}
+			}
+			OR = {
+				has_war_with = ENG
+				has_war_with = USA
+			}
+		}
+	}
+
+	ai_national_focuses = {
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}

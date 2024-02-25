@@ -1,0 +1,329 @@
+SWE_alt_democratic_plan = {
+	name = "Democratic Alternative Plan"
+	desc = "The Swedish AI will go down the democratic tree but will be more likely to become actively involved in the war by rearming faster."
+
+	allowed = {
+		SWE_AAT = yes
+	}
+	enable = {
+		OR = {
+			is_historical_focus_on = no 
+			has_country_flag = SWE_AI_RANDOM_DEMOCRATIC_ALT
+			has_game_rule = {
+				rule = SWE_ai_behavior
+				option = SWE_DEMOCRATIC_DEM_ALT
+			}
+		}	
+	}
+	abort = {
+		is_subject = yes 
+		#has_war = yes 
+	}
+
+	ai_national_focuses = {
+	}
+
+	focus_factors = {
+		
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}
+
+SWE_communism = {
+	name = "Communism "
+	desc = "The Swedish AI will go down the communism tree and either join the Axis or the Allies"
+
+	allowed = {
+		SWE_AAT = yes
+	}
+	enable = {
+		OR = {
+			is_historical_focus_on = no 
+			has_country_flag = SWE_AI_RANDOM_COMMUNISM
+			has_game_rule = {
+				rule = SWE_ai_behavior
+				option = SWE_COMMUNISM
+			}
+		}	
+	}
+	abort = {
+		is_subject = yes 
+	}
+
+	ai_national_focuses = {
+	}
+
+	focus_factors = {
+		
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}
+
+SWE_fascist_independent = {
+	name = "Independant Fascist "
+	desc = "The Swedish AI will go down the fascist tree and remain independent"
+
+	allowed = {
+		SWE_AAT = yes
+	}
+	enable = {
+		OR = {
+			is_historical_focus_on = no 
+			has_country_flag = SWE_AI_RANDOM_FASCIST_INDEPENDENT
+			has_game_rule = {
+				rule = SWE_ai_behavior
+				option = SWE_FASCIST_INDEPENDENT
+			}
+		}	
+	}
+	abort = {
+		is_subject = yes 
+	}
+
+	ai_national_focuses = {
+	}
+
+	focus_factors = {
+		
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}
+
+
+SWE_fascist_puppet = {
+	name = "Puppet Fascist"
+	desc = "The Swedish AI will align itself with Germany, become a puppet and stay loyal to them"
+
+	allowed = {
+		SWE_AAT = yes
+	}
+	enable = {
+		OR = {
+			is_historical_focus_on = no 
+			has_country_flag = SWE_AI_RANDOM_FASCIST_PUPPET
+			has_game_rule = {
+				rule = SWE_ai_behavior
+				option = SWE_FASCIST_PUPPET
+			}
+		}	
+	}
+	abort = {
+	}
+
+	ai_national_focuses = {
+	}
+
+	focus_factors = {
+		
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}
+
+SWE_fascist_puppet_backstabber = {
+	name = "Backstabber Puppet Fascist"
+	desc = "The Swedish AI will align itself with Germany, become a puppet and break free when the time is right"
+
+	allowed = {
+		SWE_AAT = yes
+	}
+	enable = {
+		OR = {
+			is_historical_focus_on = no 
+			has_country_flag = SWE_AI_RANDOM_PUPPET_BACKSTABBER
+			has_game_rule = {
+				rule = SWE_ai_behavior
+				option = SWE_FASCIST_PUPPET_BACKSTABBER
+			}
+		}	
+	}
+	abort = {
+	}
+
+	ai_national_focuses = {
+	}
+
+	focus_factors = {
+		
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}
+
+
+SWE_unaligned = {
+	name = "Monarchist Sweden"
+	desc = ""
+
+	allowed = {
+		SWE_AAT = yes
+	}
+	enable = {
+		OR = {
+			is_historical_focus_on = no 
+			has_country_flag = SWE_AI_RANDOM_UNALIGNED
+			has_game_rule = {
+				rule = SWE_ai_behavior
+				option = SWE_UNALIGNED
+			}
+		}	
+	}
+	abort = {
+	}
+
+	ai_national_focuses = {
+	}
+
+	focus_factors = {
+		
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}
+
+SWE_nordic_defence_council = {
+	name = "Nordic Defence Council"
+	desc = ""
+
+	allowed = {
+		SWE_AAT = yes
+	}
+	enable = {
+		OR = {
+			is_historical_focus_on = no 
+			has_country_flag = SWE_AI_RANDOM_DEMOCRATIC_NORDIC_DEFENCE_COUNCIL
+			has_game_rule = {
+				rule = SWE_ai_behavior
+				option = SWE_DEMOCRATIC_NORDIC_DEFENCE_COUNCIL
+			}
+		}	
+	}
+	abort = {
+		is_subject = yes 
+		#has_war = yes 
+	}
+
+	ai_national_focuses = {
+	}
+
+	focus_factors = {
+		
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}

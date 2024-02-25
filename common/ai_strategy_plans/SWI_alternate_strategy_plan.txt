@@ -1,0 +1,180 @@
+SWI_alt_allied = {
+	name = "Alternate Democratic - Allied"
+	desc = ""
+
+	allowed = {
+		SWI_bba = yes
+	}
+	enable = {
+		OR = {		
+			has_game_rule = {
+				rule = SWI_AI_BEHAVIOR
+				option = SWI_ALLIED_DEMOCRATIC
+			}
+			has_country_flag = SWI_AI_RANDOM_ALLIED_DEMOCRATIC
+		}	
+	}
+	abort = {
+		is_subject = yes 
+	}
+
+	ai_national_focuses = {
+	}
+
+	focus_factors = {
+		
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}
+
+SWI_alt_expansionist = {
+	name = "Alternate Democratic - Expansionist"
+	desc = ""
+
+	allowed = {
+		SWI_bba = yes
+	}
+	enable = {
+		OR = {
+			has_game_rule = {
+				rule = SWI_AI_BEHAVIOR
+				option = SWI_EXPANSIONIST_DEMOCRATIC
+			}
+			has_country_flag = SWI_AI_RANDOM_EXPANSIONIST_DEMOCRATIC
+		}	
+	}
+	abort = {
+		is_subject = yes 
+	}
+
+	ai_national_focuses = {
+	}
+
+	focus_factors = {
+		
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+}
+
+SWI_imperial = {
+	name = "Swiss Protectorate Plan"
+	desc = ""
+
+	allowed = {
+		SWI_bba = yes
+	}
+	enable = {
+		OR = {
+			has_game_rule = {
+				rule = SWI_AI_BEHAVIOR
+				option = SWI_IMPERIAL
+			}
+			has_country_flag = SWI_AI_RANDOM_IMPERIAL
+		}	
+	}
+	abort = {
+		is_subject = yes 
+	}
+
+	ai_national_focuses = {
+	}
+
+	focus_factors = {
+		
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+}
+
+SWI_fascist = {
+	name = "Swiss Fascist Plan"
+	desc = ""
+
+	allowed = {
+		SWI_bba = yes
+	}
+	enable = {
+		OR = {
+			has_game_rule = {
+				rule = SWI_AI_BEHAVIOR
+				option = SWI_FASCIST
+			}	
+			has_country_flag = SWI_AI_RANDOM_FASCIST
+		}	
+	}
+	abort = {
+		is_subject = yes 
+	}
+
+	ai_national_focuses = {
+	}
+
+	focus_factors = {
+		
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+}

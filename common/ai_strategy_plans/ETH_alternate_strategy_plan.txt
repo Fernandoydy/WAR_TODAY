@@ -1,0 +1,142 @@
+# By Blood Alone
+ETH_BBA_alternative_imperialist_plan = {
+	name = "ETH imperialist plan"
+	desc = ""
+
+	allowed = {
+		original_tag = ETH
+	}
+	enable = {
+		OR = {
+			has_country_flag = ETH_AI_RANDOM_IMPERIAL
+			has_game_rule = {
+				rule = ETH_ai_behavior
+				option = IMPERIAL
+			}
+		}
+		has_DLC = "By Blood Alone"
+	}
+	abort = {
+		# is_subject = yes # Maybe re-enable... 
+	}
+
+	ai_national_focuses = {
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+
+	}
+	traits = {
+		
+	}
+
+	
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}
+
+#Ethiopia overthrows HS, requests soviet aid and becomes a puppet.
+ETH_stalinist_plan = {
+	name = "Ethiopian Communist Plan"
+	desc = "RULE_OPTION_ETH_STALINIST_desc"
+
+	allowed = {
+		original_tag = ETH
+	}
+	enable = {
+		OR = {
+			has_country_flag = ETH_AI_RANDOM_STALINIST
+			has_game_rule = {
+				rule = ETH_ai_behavior
+				option = STALINIST
+			}
+		}
+		has_DLC = "By Blood Alone"
+	}
+	abort =  {
+		
+	}
+	ai_national_focuses = {
+	}
+}
+
+ETH_anarcho_communist_plan = {
+	name = "Ethiopian Anarchist Plan"
+	desc = "RULE_OPTION_ETH_ANARCHIST_desc"
+	allowed = {
+		original_tag = ETH
+	}
+	enable = {
+		OR = {
+			has_country_flag = ETH_AI_RANDOM_anarchist
+			has_game_rule = {
+				rule = ETH_ai_behavior
+				option = ANARCHIST
+			}
+		}
+		has_DLC = "By Blood Alone"
+	}
+	abort =  {
+		
+	}
+	ai_national_focuses = {
+	}
+}
+
+ETH_fascist_collaborationist_plan = {
+	name = "Ethiopian Collaborationist Plan"
+	desc = "RULE_OPTION_ETH_COLLABORATIONIST_desc"
+	allowed = {
+		original_tag = ETH
+	}
+	enable = {
+		OR = {
+			has_country_flag = ETH_AI_RANDOM_COLLABORATIONIST			
+			has_game_rule = {
+				rule = ETH_ai_behavior
+				option = Collaborationist
+			}
+		}
+		has_DLC = "By Blood Alone"
+	}
+	abort =  {
+		
+	}
+	ai_national_focuses = {
+	}
+}
+
+ETH_fascist_independent_plan = {
+	name = "Ethiopian Independent Fascist Plan"
+	desc = "RULE_OPTION_ETH_INDEPENDENT_FASCIST_desc"
+	allowed = {
+		original_tag = ETH
+	}
+	enable = {
+		OR = {
+			has_country_flag = ETH_AI_RANDOM_INDEPENDENT_FASCIST			
+			has_game_rule = {
+				rule = ETH_ai_behavior
+				option = Independent_Fascist
+			}
+		}
+		has_DLC = "By Blood Alone"
+	}
+	abort =  {
+		
+	}
+	ai_national_focuses = {
+	}
+}

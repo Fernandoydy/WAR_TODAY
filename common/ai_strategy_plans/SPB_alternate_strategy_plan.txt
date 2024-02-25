@@ -1,0 +1,51 @@
+SPB_alternate_plan = {
+	name = "Spanish Carlist alternate plan"
+	desc = "Alternate behavior for Carlist Spain"
+
+	allowed = {
+		original_tag = SPR
+	}
+	enable = {
+		OR = {
+			tag = SPB
+			AND = {
+				tag = SPR
+				OR = {
+					has_country_flag = SPR_AI_RANDOM_CARLIST
+					has_game_rule = {
+						rule = SPR_ai_behavior 
+						option = CARLIST
+					}
+				}
+			}
+		}
+	}
+	abort = {
+		OR = {
+			tag = SPD
+			tag = SPC
+		}
+		
+	}
+
+	ai_national_focuses = {
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}
