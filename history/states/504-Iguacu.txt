@@ -1,4 +1,4 @@
-
+### MATO GROSSO DO SUL ###
 state={
 	id=504
 	name="STATE_504"
@@ -15,11 +15,11 @@ state={
 
 	}
 
-	provinces={
+	provinces = {
 		2181 5200 8189 8224 10959 12951 
 	}
-	manpower=229900
-	buildings_max_level_factor=1.000
+	manpower = 2757013 #CORRIGIDO
+	buildings_max_level_factor = 1.000
 
 	local_supplies=0.0 
 }

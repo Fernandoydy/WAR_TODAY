@@ -1,0 +1,22 @@
+### PARANÁ ###
+state = {
+	id = 936
+	name = "STATE_936"
+	resources = {
+	}
+
+	history = {
+		owner = BRA
+        buildings = {
+            infrastructure = 1
+            industrial_complex = 1
+		}
+	}
+
+	provinces = {
+		2109 4533 4587 5178 8181 8239
+	}
+	manpower = 11444380 #CORRIGIDO
+	buildings_max_level_factor=1.000
+	state_category = city
+}

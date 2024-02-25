@@ -1,7 +1,7 @@
-### PARÁ ###
+### MINAS GERAIS ###
 state = {
-	id = 496
-	name = "STATE_496"
+	id = 938
+	name = "STATE_938"
 	resources = {
 	}
 
@@ -17,7 +17,7 @@ state = {
 	}
 
 	provinces={
-		1979 2035 5008 8172 10956
+		4570 5223 7589 8233 10931 12903 12909 12938 10945 12977 2167 7476 8148 12923 2190 2218 12438 10360 8210 12479 2185 8226 12334
 	}
 	manpower = 20539989 #CORRIGIDO
 	buildings_max_level_factor=1.000
