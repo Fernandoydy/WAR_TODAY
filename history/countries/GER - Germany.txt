@@ -372,15 +372,16 @@ set_war_support = 0.3
 }
 
 set_politics = {
-	ruling_party = fascism
+	ruling_party = democratic
 	last_election = "1933.3.5"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	democratic = 20
-	fascism = 60
-	communism = 20
+	democratic = 70
+	fascism = 1
+	communism = 9
+	neutrality = 20
 }
 
 create_faction = Axis
