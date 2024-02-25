@@ -1,0 +1,22 @@
+
+state = {
+	id = 935
+	name = "STATE_935"
+	resources = {
+	}
+
+	history = {
+		owner = BRA
+        buildings = {
+            infrastructure = 1
+            industrial_complex = 1
+		}
+	}
+
+	provinces = {
+		2198 5216 10960
+	}
+	manpower = 790000
+	buildings_max_level_factor=1.000
+	state_category = city
+}
