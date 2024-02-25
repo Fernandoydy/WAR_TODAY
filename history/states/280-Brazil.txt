@@ -1,11 +1,9 @@
+### Mato Grosso ###
+state = {
+	id = 280
+	name = "STATE_280"
 
-state={
-	id=280
-	name="STATE_280"
-	
-	state_category = pastoral
-
-	history={
+	history = {
 		owner = BRA
 		buildings = {
 			infrastructure = 1
@@ -16,10 +14,10 @@ state={
 	}
 
 	provinces={
-		2111 2142 2147 2204 8175 11010 12939 
+		2111 2142 2147 2204 8175
 	}
-	manpower=120000
+	manpower = 3658649 #CORRIGIDO
 	buildings_max_level_factor=1.000
-
-	local_supplies=0.0 
+	state_category=pastoral
+	local_supplies=0.000
 }

@@ -1,4 +1,4 @@
-
+### Goiás ###
 state = {
 	id = 505
 	name = "STATE_505"
@@ -11,6 +11,9 @@ state = {
 			infrastructure = 1
 
 		}
+		victory_points = {
+			5208 50
+		}
 		add_core_of = BRA
 
 	}
@@ -18,7 +21,7 @@ state = {
 	provinces={
 		5115 5148 5208 8140 12959 12987
 	}
-	manpower = 7056495 #CORRIGIDO
+	manpower = 9873876 #CORRIGIDO (7056495 de Goiás + 2817381 do Distrito Federal)
 	buildings_max_level_factor=1.000
 
 	local_supplies=0.0 

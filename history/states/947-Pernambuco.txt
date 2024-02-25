@@ -1,7 +1,7 @@
-### PARÁ ###
+### Pernambuco ###
 state = {
-	id = 496
-	name = "STATE_496"
+	id = 947
+	name = "STATE_947"
 	resources = {
 	}
 
@@ -14,9 +14,9 @@ state = {
 	}
 
 	provinces={
-		1979 2035 5008 8172 10956
+		1446 5168 5182 8227 10345 10967 12961 
 	}
-	manpower = 20539989 #CORRIGIDO
+	manpower = 9058931 #CORRIGIDO
 	buildings_max_level_factor=1.000
 	state_category = city
 }
