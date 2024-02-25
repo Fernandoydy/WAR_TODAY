@@ -1,7 +1,7 @@
-### PARÁ ###
+### Amapá ###
 state = {
-	id = 496
-	name = "STATE_496"
+	id = 941
+	name = "STATE_941"
 	resources = {
 	}
 
@@ -14,9 +14,9 @@ state = {
 	}
 
 	provinces={
-		1979 2035 5008 8172 10956
+		4980
 	}
-	manpower = 20539989 #CORRIGIDO
+	manpower = 733759 #CORRIGIDO
 	buildings_max_level_factor=1.000
 	state_category = city
 }

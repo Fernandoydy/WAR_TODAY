@@ -1,8 +1,8 @@
-
+### Maranhão
 state={
 	id=497
 	name="STATE_497"
-	manpower = 2950100
+	manpower = 6776699 #CORRIGIDO
 	
 	state_category = rural
 	
@@ -28,7 +28,7 @@ state={
 	}
 
 	provinces={
-		2150 2214 2228 5153 5204 5220 10874 10984 12853 12913 12933 12947 12999 
+		2150 2214 5220 10874 12853 12913 12933 12947 12999 
 	}
 
 	local_supplies=0.0 

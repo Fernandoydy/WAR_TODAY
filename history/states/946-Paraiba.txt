@@ -1,7 +1,7 @@
-### PARÁ ###
+### Paraíba ###
 state = {
-	id = 496
-	name = "STATE_496"
+	id = 946
+	name = "STATE_946"
 	resources = {
 	}
 
@@ -14,9 +14,9 @@ state = {
 	}
 
 	provinces={
-		1979 2035 5008 8172 10956
+		2227 7561 10989
 	}
-	manpower = 20539989 #CORRIGIDO
+	manpower = 3974687 #CORRIGIDO
 	buildings_max_level_factor=1.000
 	state_category = city
 }

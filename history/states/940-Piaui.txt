@@ -1,7 +1,7 @@
-### PARÁ ###
+### Piauí ###
 state = {
-	id = 496
-	name = "STATE_496"
+	id = 940
+	name = "STATE_940"
 	resources = {
 	}
 
@@ -14,9 +14,9 @@ state = {
 	}
 
 	provinces={
-		1979 2035 5008 8172 10956
+		2228 5153 5204 10984 
 	}
-	manpower = 20539989 #CORRIGIDO
+	manpower = 3271199 #CORRIGIDO
 	buildings_max_level_factor=1.000
 	state_category = city
 }
