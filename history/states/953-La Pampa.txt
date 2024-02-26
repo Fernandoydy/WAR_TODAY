@@ -1,0 +1,22 @@
+### La Pampa (Argentina) ###
+state = {
+	id = 953
+	name = "STATE_953"
+	resources = {
+	}
+
+	history = {
+		owner = ARG
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+		}
+	}
+
+	provinces = {
+		2149 8192 10935
+	}
+	manpower = 350000 #CORRIGIDO
+	buildings_max_level_factor = 1.000
+	state_category = city
+}
