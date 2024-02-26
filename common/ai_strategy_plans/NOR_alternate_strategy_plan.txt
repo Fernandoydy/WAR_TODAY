@@ -1,0 +1,147 @@
+NOR_fascist_plan = {
+
+	allowed = {
+		NOR_AAT = yes
+	}
+	enable = {
+		NOR_is_fascist_ai = yes 	
+	}
+	abort = {
+
+	}
+
+	ai_national_focuses = {
+	}
+
+	focus_factors = {
+		
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+}
+
+NOR_stalinist_plan = {
+
+	allowed = {
+		NOR_AAT = yes
+	}
+	enable = {
+		NOR_is_stalinist_ai = yes 	
+	}
+	abort = {
+
+	}
+
+	ai_national_focuses = {
+	}
+
+	focus_factors = {
+		
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+}
+
+NOR_trotskyist_plan = {
+
+	allowed = {
+		NOR_AAT = yes
+	}
+	enable = {
+		NOR_is_trotskyist_ai = yes 	
+	}
+	abort = {
+
+	}
+
+	ai_national_focuses = {
+	}
+
+	focus_factors = {
+		
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+}
+
+NOR_monarchist_plan = {
+
+	allowed = {
+		NOR_AAT = yes
+	}
+	enable = {
+		NOR_is_monarchist_ai = yes 	
+	}
+	abort = {
+
+	}
+
+	ai_national_focuses = {
+	}
+
+	focus_factors = {
+		
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+}

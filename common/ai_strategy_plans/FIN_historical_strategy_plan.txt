@@ -1,0 +1,50 @@
+FIN_historical_plan = {
+
+	allowed = {
+		original_tag = FIN
+	}
+	enable = {
+		OR = {
+			AND = {
+				is_historical_focus_on = yes
+				has_game_rule = {
+					rule = FIN_ai_behavior
+					option = DEFAULT
+				}
+			}
+			has_country_flag = FIN_AI_RANDOM_HISTORICAL
+			has_game_rule = {
+				rule = FIN_ai_behavior
+				option = HISTORICAL
+			}
+		}
+	}
+	#abort = { #TODO_Manu (if time allows)
+	#
+	#}
+
+	ai_national_focuses = {
+	}
+
+	#Focuses never to take
+	focus_factors = {
+	}			
+
+	research = {
+
+	}
+
+	ideas = {
+
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}

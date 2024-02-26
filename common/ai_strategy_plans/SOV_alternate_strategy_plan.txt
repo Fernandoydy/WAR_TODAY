@@ -1,0 +1,284 @@
+SOV_left_opposition_plan = {
+	name = "SOV left opposition plan"
+	desc = ""
+
+	allowed = {
+		original_tag = SOV
+	}
+	enable = {
+		OR = {
+			has_country_flag = SOV_AI_RANDOM_COMMUNIST_LEFT_OPPOSITION
+			has_game_rule = {
+				rule = SOV_ai_behavior
+				option = LEFT_OPPOSITION
+			}
+		}
+	}
+	abort = {
+		is_subject = yes
+	}
+
+	ai_national_focuses = {
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+
+	}
+	traits = {
+		
+	}
+
+	
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}
+
+SOV_left_opposition_cooperative_plan = {
+	name = "SOV left opposition cooperative plan"
+	desc = ""
+
+	allowed = {
+		original_tag = SOV
+	}
+	enable = {
+		OR = {
+			has_country_flag = SOV_AI_RANDOM_COMMUNIST_LEFT_OPPOSITION_COOPERATIVE
+			has_game_rule = {
+				rule = SOV_ai_behavior
+				option = LEFT_OPPOSITION_COOPERATIVE
+			}
+		}
+	}
+	abort = {
+		is_subject = yes
+	}
+
+	ai_national_focuses = {
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+
+	}
+	traits = {
+		
+	}
+
+	
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}
+
+
+SOV_right_opposition_plan = {
+	name = "SOV right opposition plan"
+	desc = ""
+
+	allowed = {
+		original_tag = SOV
+	}
+	enable = {
+		OR = {
+			has_country_flag = SOV_AI_RANDOM_COMMUNIST_RIGHT_OPPOSITION
+			has_game_rule = {
+				rule = SOV_ai_behavior
+				option = RIGHT_OPPOSITION
+			}
+		}
+	}
+	abort = {
+		is_subject = yes
+	}
+
+	ai_national_focuses = {
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+
+	}
+	traits = {
+		
+	}
+
+	
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}
+
+
+
+SOV_right_opposition_cooperative_plan = {
+	name = "SOV right opposition cooperative plan"
+	desc = ""
+
+	allowed = {
+		original_tag = SOV
+	}
+	enable = {
+		OR = {
+			has_country_flag = SOV_AI_RANDOM_COMMUNIST_RIGHT_OPPOSITION_COOPERATIVE
+			has_game_rule = {
+				rule = SOV_ai_behavior
+				option = RIGHT_OPPOSITION_COOPERATIVE
+			}
+		}
+	}
+	abort = {
+		is_subject = yes
+	}
+
+	ai_national_focuses = {
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+
+	}
+	traits = {
+		
+	}
+
+	
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}
+
+SOV_exiles_tsarist_plan = {
+	name = "Soviet Union Tsarist Plan"
+	desc = "The White Exiles return to bring Russia onto the path to renewed Tsarism."
+
+	allowed = {
+		original_tag = SOV
+	}
+	enable = {
+		OR = {
+			has_country_flag = SOV_AI_RANDOM_EXILES_TSARIST
+			has_game_rule = {
+				rule = SOV_ai_behavior
+				option = EXILES_TSARIST
+			}
+		}
+	}
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+
+	}
+	traits = {
+		
+	}
+
+	
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}
+
+SOV_exiles_fascist_plan = {
+	name = "Soviet Union Fascist Plan"
+	desc = "The White Exiles return to bring Fascism to Russia."
+
+	allowed = {
+		original_tag = SOV
+	}
+	enable = {
+		OR = {
+			has_country_flag = SOV_AI_RANDOM_EXILES_FASCIST
+			has_game_rule = {
+				rule = SOV_ai_behavior
+				option = EXILES_FASCIST
+			}
+		}
+	}
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+
+	}
+	traits = {
+		
+	}
+
+	
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}
