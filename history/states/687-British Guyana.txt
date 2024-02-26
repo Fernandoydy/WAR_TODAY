@@ -1,7 +1,8 @@
+### Guiana ###
 state={
 	id=687
 	name="STATE_687"
-	manpower = 309000
+	manpower = 804567 #CORRIGIDO
 	
 	state_category = pastoral
 	
@@ -10,8 +11,8 @@ state={
 	}
 
 	history={
+		owner = GYA
 		add_core_of = GYA
-		owner = ENG
 		victory_points = {
 			4982 1
 		}
