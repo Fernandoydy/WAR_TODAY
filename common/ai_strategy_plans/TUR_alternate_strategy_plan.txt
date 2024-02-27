@@ -230,63 +230,6 @@ TUR_democratic_plan = {
 
 }
 
-TUR_alternate_democratic_plan = {
-	name = "Turkey Alternate Democratic Plan"
-	desc = "Adnan Menderes will transition Turkey into a conservative democracy and join the Allies."
-
-	enable = {
-		OR = {
-			has_country_flag = TUR_AI_RANDOM_DEMOCRATIC_ALTERNATE
-			has_game_rule = {
-				rule = TUR_ai_behavior 
-				option = TUR_DEMOCRATIC_ALTERNATE
-			}
-			AND = { 
-				has_completed_focus = TUR_democratic_capstone_focus
-				has_country_leader = {
-					character = TUR_adnan_menderes
-					ruling_only = yes
-				}
-			}
-		}
-	}
-	abort = {
-		OR = {
-			has_war_with = ENG
-			has_war_with = USA
-			has_government = communism
-			has_government = fascism
-			AND = {
-				has_country_leader = {
-					character = TUR_celal_bayar
-					ruling_only = yes
-				}
-			}
-		}
-	}
-
-	ai_national_focuses = {
-	}
-
-	research = {
-
-	}
-
-	ideas = {
-		TUR_fethi_okyar = 5
-	}
-
-	# Keep small, as it is used as a factor for some things (such as research needs)
-	# Recommended around 1.0. Useful for relation between plans
-	weight = {
-		factor = 1.0
-		modifier = {
-			factor = 1.0
-		}
-	}
-
-}
-
 TUR_fascist_plan = {
 	name = "Turkey Fascist Plan"
 	desc = "Recep Peker shall transition Turkey into a fascist dictatorship and attempt to join the Axis."

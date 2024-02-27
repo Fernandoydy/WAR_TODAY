@@ -915,69 +915,13 @@ ideas = {
 			}
 		}
 
-		YUG_ikarus = {
-		
-			picture = generic_air_manufacturer_3
-			
-			available = {
-				has_completed_focus = YUG_ikarus
-			}
-
-			allowed = {
-				original_tag = YUG
-				has_dlc = "Death or Dishonor"
-			}
-			
-			research_bonus = {
-				air_equipment = 0.15
-			}
-			
-			traits = { light_aircraft_manufacturer }
-			
-			equipment_bonus = {
-				# produced under licence: Hawker Fury, Potez 25, Avia BH-33, own flying boats and recon aircrafts
-			}
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		rogozarski = {
+			rogozarski = {
 			
 			picture = generic_air_manufacturer_2
 
 			allowed = {
 				original_tag = YUG
 				NOT = { has_dlc = "Death or Dishonor" }
-			}
-			
-			research_bonus = {
-				air_equipment = 0.15
-			}
-			
-			traits = { medium_aircraft_manufacturer }
-			
-			equipment_bonus = {
-				# trainers and fighter airplanes Rogozarski PVT
-			}
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		YUG_rogozarski = {
-
-			picture = generic_air_manufacturer_2
-			
-			available = {
-				has_completed_focus = YUG_rogozarski
-			}
-
-			allowed = {
-				original_tag = YUG
-				has_dlc = "Death or Dishonor"
 			}
 			
 			research_bonus = {
@@ -1018,35 +962,8 @@ ideas = {
 				factor = 1
 			}
 		}
+	}	
 
-		YUG_zmaj = {
-
-			picture = generic_air_manufacturer_1
-			
-			available = {
-				has_completed_focus = YUG_zmaj				
-			}			
-
-			allowed = {
-				original_tag = YUG
-				has_dlc = "Death or Dishonor"
-			}
-			
-			research_bonus = {
-				air_equipment = 0.15
-			}
-			
-			traits = { heavy_aircraft_manufacturer }
-			
-			equipment_bonus = {
-				# trainers and bombers
-			}
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	}
 	materiel_manufacturer = {
 			
 		designer = yes

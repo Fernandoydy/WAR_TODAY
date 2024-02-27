@@ -305,7 +305,7 @@ set_convoys = 25
 
 recruit_character = SWE_per_albin_hansson
 recruit_character = SWE_sven_olov_lindholm
-recruit_character = SWE_sven_linderot 
+
 recruit_character = SWE_folke_hogberg #NOT U
 recruit_character = SWE_erik_af_edholm #NOT U
 recruit_character = SWE_claes_lindstrom
