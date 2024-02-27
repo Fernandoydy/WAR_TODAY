@@ -5,10 +5,9 @@ state=
 	manpower = 51000
 	
 	state_category = pastoral
-	history=
-	{
-		add_core_of = BLZ
-		owner = ENG
+	history = {
+
+		owner = BLZ
 		victory_points = {
 			2077 1 
 		}
