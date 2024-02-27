@@ -5,11 +5,9 @@ state={
 		tungsten=2.000
 	}
 
-	history={
-		owner = YUN
-		add_core_of = YUN
-		add_core_of = CHI
-		add_core_of = PRC
+	history = {
+		owner = CHI
+
 		victory_points = {
 			1319 10 
 		}
@@ -19,23 +17,6 @@ state={
 			industrial_complex = 3
 
 		}
-		1938.10.25 = {
-			if = {
-				limit = {
-					NOT = {
-						has_dlc = "Waking the Tiger" 
-					}
-
-				}
-				CHI = {
-					transfer_state = PREV
-
-				}
-
-			}
-
-		}
-
 	}
 
 	provinces={
