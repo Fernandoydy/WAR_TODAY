@@ -1,8 +1,8 @@
-### Chaco (Argentina) ###
+### Formosa (Argentina) ###
 state={
-	id=509
-	name="STATE_509"
-	manpower = 1200000 #CORRIGIDO
+	id=958
+	name="STATE_958"
+	manpower = 530000 #CORRIGIDO
 	
 	state_category = town
 	
@@ -21,8 +21,7 @@ state={
 	}
 
 	provinces={
-		2106 5213 10986
+		12922 12943
 	}
 
-	local_supplies=6.0 
 }

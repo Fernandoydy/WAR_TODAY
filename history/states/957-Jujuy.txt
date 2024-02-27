@@ -1,7 +1,7 @@
-### La Pampa (Argentina) ###
+### Jujuy (Argentina) ###
 state = {
-	id = 953
-	name = "STATE_953"
+	id = 957
+	name = "STATE_957"
 	resources = {
 	}
 
@@ -14,10 +14,9 @@ state = {
 	}
 
 	provinces = {
-		2149 10935
+		2224
 	}
-	manpower = 350000 #CORRIGIDO
+	manpower = 770000 #CORRIGIDO
 	buildings_max_level_factor = 1.000
 	state_category = city
 }
-T

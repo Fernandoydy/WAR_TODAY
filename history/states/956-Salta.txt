@@ -1,7 +1,7 @@
-### La Pampa (Argentina) ###
+### Salta (Argentina) ###
 state = {
-	id = 953
-	name = "STATE_953"
+	id = 956
+	name = "STATE_956"
 	resources = {
 	}
 
@@ -14,10 +14,9 @@ state = {
 	}
 
 	provinces = {
-		2149 10935
+		10944 10965 11001
 	}
-	manpower = 350000 #CORRIGIDO
+	manpower = 1300000 #CORRIGIDO
 	buildings_max_level_factor = 1.000
 	state_category = city
 }
-T
