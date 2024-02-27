@@ -1,7 +1,7 @@
-### La Pampa (Argentina) ###
+### Misiones (Argentina) ###
 state = {
-	id = 953
-	name = "STATE_953"
+	id = 955
+	name = "STATE_955"
 	resources = {
 	}
 
@@ -14,10 +14,9 @@ state = {
 	}
 
 	provinces = {
-		2149 10935
+		11007
 	}
-	manpower = 350000 #CORRIGIDO
+	manpower = 1200000 #CORRIGIDO
 	buildings_max_level_factor = 1.000
 	state_category = city
 }
-T

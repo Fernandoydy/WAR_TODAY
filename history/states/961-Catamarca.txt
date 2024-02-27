@@ -1,14 +1,12 @@
-### Chaco (Argentina) ###
+### Catamarca (Argentina) ###
 state={
-	id=509
-	name="STATE_509"
-	manpower = 1200000 #CORRIGIDO
+	id=961
+	name="STATE_961"
+	manpower = 415000 #CORRIGIDO
 	
 	state_category = town
 	
 	resources={
-		tungsten=35 # was: 46
-		steel=6 # was: 8
 	}
 
 	history={
@@ -21,8 +19,7 @@ state={
 	}
 
 	provinces={
-		2106 5213 10986
+		8195 8253 11022 12978
 	}
 
-	local_supplies=6.0 
 }

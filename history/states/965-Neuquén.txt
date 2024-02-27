@@ -1,24 +1,25 @@
-### Mendoza ###
+### Neuquén (Argentina) ###
 state={
-	id=511
-	name="STATE_511"
-	manpower = 1800000 #CORRIGIDO
+	id=965
+	name="STATE_965"
+	manpower = 650000 #CORRIGIDO
 	
-	state_category = rural
+	state_category = town
+	
+	resources={
+	}
 
 	history={
 		owner = ARG
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
-			air_base = 1
 		}
 		add_core_of = ARG
-
 	}
 
 	provinces={
-		2215 8215 10992 11021
+		8192
 	}
 
 }

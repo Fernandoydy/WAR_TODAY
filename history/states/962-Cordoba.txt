@@ -1,14 +1,12 @@
-### Chaco (Argentina) ###
+### Córdoba (Argentina) ###
 state={
-	id=509
-	name="STATE_509"
-	manpower = 1200000 #CORRIGIDO
+	id=962
+	name="STATE_962"
+	manpower = 3600000 #CORRIGIDO
 	
 	state_category = town
 	
 	resources={
-		tungsten=35 # was: 46
-		steel=6 # was: 8
 	}
 
 	history={
@@ -21,8 +19,7 @@ state={
 	}
 
 	provinces={
-		2106 5213 10986
+		5152 5184 7550 10975 10985 12942
 	}
 
-	local_supplies=6.0 
 }

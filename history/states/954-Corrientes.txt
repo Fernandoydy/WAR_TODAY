@@ -1,7 +1,7 @@
-### La Pampa (Argentina) ###
+### Corrientes (Argentina) ###
 state = {
-	id = 953
-	name = "STATE_953"
+	id = 954
+	name = "STATE_954"
 	resources = {
 	}
 
@@ -14,10 +14,9 @@ state = {
 	}
 
 	provinces = {
-		2149 10935
+		8187 8238 12964
 	}
-	manpower = 350000 #CORRIGIDO
+	manpower = 1100000 #CORRIGIDO
 	buildings_max_level_factor = 1.000
 	state_category = city
 }
-T
