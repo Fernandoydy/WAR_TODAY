@@ -207,7 +207,7 @@ set_war_support = 0.3
 	}
 
 	#MR pact effect, Also has a part scripted in soviet history file
-	unlock_national_focus = GER_mol_rib_pact
+
 	every_other_country = {
 		limit = {
 			has_government = fascism 
@@ -219,7 +219,7 @@ set_war_support = 0.3
 	#MR pact end
 
 	#Soviet treaty
-	unlock_national_focus = GER_soviet_treaty
+
 	add_tech_bonus = {
 		bonus = 1.0
 		uses = 2
@@ -231,26 +231,9 @@ set_war_support = 0.3
 	}
 	#Soviet treaty end
 	
-	unlock_national_focus = GER_rhineland
-	unlock_national_focus = GER_anschluss
-	unlock_national_focus = GER_demand_sudetenland
-	unlock_national_focus = GER_first_vienna_award
-	unlock_national_focus = GER_end_of_czechoslovakia
-	unlock_national_focus = GER_demand_memel
-	unlock_national_focus = GER_four_year_plan
-	unlock_national_focus = GER_autarky
-	unlock_national_focus = GER_synthetic_rubber
-
 	set_global_flag = end_of_czechoslovakia
 	set_global_flag = olympics_1936
 	set_variable = { var = GER_mefo_bill_counter value = 90 }
-	complete_national_focus = GER_autobahn
-	complete_national_focus = GER_west_wall
-	complete_national_focus = GER_army_innovation
-	complete_national_focus = GER_hermann_goring_werke
-	complete_national_focus = GER_kdf_wagen
-	complete_national_focus = GER_coal_liquidization
-	complete_national_focus = GER_extra_tech_slot
 
 	#BUILDINGS
 	
@@ -397,8 +380,6 @@ add_ideas = {
 #	SWE_historical_trade_with_Germany_dummy CUT
 }
 add_ideas = GER_mefo_bills_1
-
-activate_mission = GER_mefo_bills_mission
 
 recruit_character = GER_wilhelm_pieck
 recruit_character = GER_konrad_adenauer

@@ -491,68 +491,12 @@ if = {
 	}
 
 	### FOCUS TREE ###
-	unlock_national_focus = ITA_solid_progress
-	#1936
-	complete_national_focus = ITA_ethiopian_war_logistics_bba #35
-	complete_national_focus = ITA_italian_highways_bba #35
-	complete_national_focus = ITA_servizio_informazione_militare
-	complete_national_focus = ITA_triumph_in_africa_bba
-	complete_national_focus = ITA_ministry_of_italian_africa #35
-	complete_national_focus = ITA_foreign_affairs #35
-	complete_national_focus = ITA_the_new_emperor_of_ethiopia #35
-	unlock_national_focus = ITA_devaluate_the_lire #35
-	unlock_national_focus = ITA_topple_amhara_rulers #35
 	
 	#1937
-	unlock_national_focus = ITA_corpo_di_truppe_volontarie #35
-	complete_national_focus = ITA_army_primacy_bba #35
-	complete_national_focus = ITA_culto_del_duce
-	complete_national_focus = ITA_fiocchi_munizioni #35
-	complete_national_focus = ITA_naval_power_projection #35
-	complete_national_focus = ITA_air_innovations_bba #35
-	complete_national_focus = ITA_expand_rome_flying_school #35
-	complete_national_focus = ITA_oto_naval_guns #35
-	complete_national_focus = ITA_develop_libya #35
 
 	#1938
-	complete_national_focus = ITA_steel_industry_in_terni
-	complete_national_focus = ITA_citta_dell_aria
-	complete_national_focus = ITA_the_man_of_providence #35
-	complete_national_focus = ITA_security_militias #35
-	complete_national_focus = ITA_railway_innovations
-	unlock_national_focus = ITA_expand_foggia_farm_fields
 
 	#1939
-	unlock_national_focus = ITA_potential_allies_in_the_balkans #35
-	complete_national_focus = ITA_develop_eritrea #35
-	complete_national_focus = ITA_industria_della_gomma_sintetica #35
-	unlock_national_focus = ITA_albanian_occupation #35 #Apr 1939
-	complete_national_focus = ITA_pact_of_steel #35 #May 39
-	complete_national_focus = ITA_expand_naval_facilities #35
-	complete_national_focus = ITA_stockpile_fuel #35
-
-	# Effects from Topple Amhara Rulers -> No point, it just triggers errors cause resistance stuff is not set yet
-	#835 = { #HARARGHE
-	#	add_compliance = 10
-	#}
-	#836 = { #BALE
-	#	add_compliance = 10
-	#}
-	#837 = { #SIDAMO
-	#	add_compliance = 10
-	#}
-	#838 = { #ILLUBABOR
-	#	add_compliance = 10
-	#}
-	#every_controlled_state = { #Reduce resistance in all future states affected by the event chain (Somali cores in ETH are excluded)
-	#	limit = {
-	#		is_core_of = ETH
-	#		is_fully_controlled_by = ITA
-	#		NOT = { state = 835 } #HARARGHE
-	#		NOT = { state = 836 } #BALE
-	#	}
-	#	add_resistance = -5
-	#}
 
 	# Effects from Corpo di Truppe Volontarie
 	SPR = { add_opinion_modifier = { target = ITA modifier = ita_supported_spain_civil_war } }
@@ -576,12 +520,6 @@ if = {
 			popularity = 0.07
 		}
 	}
-	activate_targeted_decision = { target = YUG decision = ITA_pressure_country_government_balkan }
-	activate_targeted_decision = { target = ROM decision = ITA_pressure_country_government_balkan }
-	activate_targeted_decision = { target = BUL decision = ITA_pressure_country_government_balkan }
-	activate_targeted_decision = { target = YUG decision = ITA_promote_ideology_rallies_balkan }
-	activate_targeted_decision = { target = ROM decision = ITA_promote_ideology_rallies_balkan }
-	activate_targeted_decision = { target = BUL decision = ITA_promote_ideology_rallies_balkan }
 
 	# Effects from Albanian Occupation
 	add_named_threat = { threat = 2 name = ITA_albania_war_goal }
@@ -854,11 +792,6 @@ if = {
 	ITA_benito_mussolini = { unit_leader_event = { id = BBA_italo_ethiopian_war_events.01 days = 14 } }  # JAN 36 - Conquer Ethiopia  - APR/JUNE 36 - (120-170 days)
 }
 
-ITA_benito_mussolini = { unit_leader_event = { id = BBA_italy_missiolinis.11 days = 185 random_days = 5 } } # JUN 36 - Conquer Ethiopia  - DEC 36 - (170 days)
-#ITA_benito_mussolini = { unit_leader_event = { id = BBA_italy_missiolinis.21 days = 370 random_days = 5 } } # JAN 37 - Pacify Ethiopia - DEC 39 - (720 days) #TODO_Manu: This is now triggered after war with MTTH
-ITA_benito_mussolini = { unit_leader_event = { id = BBA_italy_missiolinis.31 days = 370 random_days = 5 } } # JAN 37 - Industrialization - DEC 37 - (350 days)
-ITA_benito_mussolini = { unit_leader_event = { id = BBA_italy_missiolinis.41 days = 735 random_days = 5 } } # JAN 38 - Increase Army - DEC 38 (350 days)
-ITA_benito_mussolini = { unit_leader_event = { id = BBA_italy_missiolinis.00 days = 1105 random_days = 5 } } # JAN 39 - Random mission dispatcher (350 days) - This event auto-triggers itself every 6 months
 # Next Missiolini is random and comes in JUN 39, next one in JUN 40.
 
 

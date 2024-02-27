@@ -7,7 +7,6 @@ HOL_colonial_alternate_democratic_plan = {
 	}
 	enable = {
 		OR = {
-			has_completed_focus = HOL_curtail_colonial_autonomy
 			has_country_flag = HOL_AI_RANDOM_DEMOCRATIC_ALTERNATE_1
 			has_game_rule = {
 				rule = HOL_ai_behavior 

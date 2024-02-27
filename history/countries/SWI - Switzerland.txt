@@ -190,8 +190,6 @@ if = { #########   By Blood Alone Stuff
 		set_variable = { SWI_councilor_3 = SWI_albert_meyer }
 		set_variable = { SWI_president_initiative_cooldown = 276 }
 		set_variable = { SWI_president_initiative_cost = 100 }
-		country_event = { id = BBA_SWI_annual_election.00 months = 12 } #Triggers the event for the yearly elections 
-		country_event = { id = BBA_switzerland.2 days = 75 }
 		SWI_rudolf_minger = {
 			set_character_flag = SWI_current_confederation_president
 			SWI_make_character_confederation_president = yes
@@ -199,7 +197,7 @@ if = { #########   By Blood Alone Stuff
 	}
 	SWI_upgrade_template_and_divisions = yes
 	country_lock_all_division_template = yes
-	SWI_find_biggest_fascist_neighbor = yes 
+
 }
 
 1939.1.1 = {

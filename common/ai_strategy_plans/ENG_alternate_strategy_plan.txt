@@ -8,8 +8,6 @@ ENG_alternate_democratic_plan = {
 	enable = {
 		OR = {
 			AND = {
-				has_completed_focus = ENG_steady_as_she_goes
-				NOT = { has_completed_focus = ENG_home_defence }
 				GER = { has_war = yes }
 				GER = { has_government = fascism }
 			}

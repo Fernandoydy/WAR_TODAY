@@ -21,7 +21,6 @@ every_possible_country = {
 		advisor = {
 			slot = army_chief
 			available = {
-				has_completed_focus = CHI_give_falkenhausen_citizenship
 				NOT = { has_global_flag = falkenhausen_recalled }
 			}
 			traits = { army_chief_offensive_2 }
@@ -37,7 +36,6 @@ every_possible_country = {
 			planning_skill = 3
 			logistics_skill = 3
 			traits = { infantry_officer }
-			visible = { has_completed_focus = CHI_give_falkenhausen_citizenship }
 		}
 	}
 	
@@ -51,7 +49,7 @@ every_possible_country = {
 			slot = air_chief
 			cost = 25
 			available = {
-				has_completed_focus = CHI_hire_chennault
+
 				NOT = { 
 					has_idea = CHI_claire_lee_chennault_theorist
 				}
@@ -67,7 +65,7 @@ every_possible_country = {
 			ledger = air
 			cost = 25
 			available = {
-				has_completed_focus = CHI_hire_chennault
+
 				NOT = { 
 					has_idea = CHI_claire_lee_chennault_air_chief
 				}
@@ -86,7 +84,6 @@ every_possible_country = {
 		advisor={
 			slot = political_advisor
 			available  = {
-				has_completed_focus  = PRC_military_intelligence_department 
 			}
 			allowed  = {
 				OR = {
@@ -113,7 +110,6 @@ every_possible_country = {
 		advisor={
 			slot = political_advisor
 			available  = {
-				has_completed_focus = CHI_bureau_of_investigation_and_statistics 
 			}
 			allowed  = {
 				OR = {
@@ -141,7 +137,6 @@ every_possible_country = {
 			slot = political_advisor
 			available  = {
 				has_intelligence_agency  = yes 
-				has_completed_focus  = CHI_bureau_of_investigation_and_statistics 
 			}
 			allowed  = {
 				OR = {
@@ -169,7 +164,6 @@ every_possible_country = {
 			slot = political_advisor
 			available  = {
 				has_intelligence_agency  = yes 
-				has_focus_tree  = china_communist_focus
 			}
 			allowed  = {
 				OR = {
@@ -194,7 +188,7 @@ every_possible_country = {
 		advisor={
 			slot = political_advisor
 			available  = {
-				has_completed_focus  = CHI_financial_policy 
+
 			}
 			allowed  = {
 				OR = {
@@ -217,7 +211,6 @@ every_possible_country = {
 		advisor={
 			slot = political_advisor
 			available  = {
-				has_completed_focus  = PRC_socialist_market_economy 
 			}
 			allowed  = {
 				OR = {
@@ -240,7 +233,6 @@ every_possible_country = {
 		advisor={
 			slot = political_advisor
 			available  = {
-				has_completed_focus  = CHI_legislative_yuan 
 				if  = {
 					limit  = {
 						has_dlc = "Man the Guns"
