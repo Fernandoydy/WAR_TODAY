@@ -883,3 +883,7 @@ SSD = {
 	color = rgb {90 107 90}
 	color_ui = rgb {90 107 90 }
 }
+PRK = {
+	color = rgb {255 1 1 }
+	color_ui = rgb {255 1 1 }
+}
