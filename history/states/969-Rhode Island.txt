@@ -1,0 +1,24 @@
+### Rhode Island (USA) ###
+state={
+	id=969
+	name="STATE_969"
+	manpower = 1059361 #CORRIGIDO
+	
+	state_category = town
+	
+	resources = {
+	}
+
+	history = {
+		owner = USA
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+	}
+
+	provinces = {
+		9832
+	}
+
+}

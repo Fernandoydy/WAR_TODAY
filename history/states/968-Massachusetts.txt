@@ -1,0 +1,24 @@
+### Massachusetts (USA) ###
+state={
+	id=968
+	name="STATE_968"
+	manpower = 6892503 #CORRIGIDO
+	
+	state_category = town
+	
+	resources={
+	}
+
+	history={
+		owner = USA
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+	}
+
+	provinces={
+		715 718 905 908 3710 3906 6732 11830
+	}
+
+}

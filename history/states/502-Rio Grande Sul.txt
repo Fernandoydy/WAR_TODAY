@@ -1,8 +1,8 @@
-
+### Rio Grande do Sul ###
 state={
 	id=502
 	name="STATE_502"
-	manpower = 2959600
+	manpower = 10882965 #CORRIGIDO
 	
 	state_category = town
 

@@ -1,0 +1,24 @@
+### Vermont (USA) ###
+state={
+	id=970
+	name="STATE_970"
+	manpower = 623989 #CORRIGIDO
+	
+	state_category = town
+	
+	resources={
+	}
+
+	history={
+		owner = USA
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+	}
+
+	provinces={
+		4445 7629 9675 13158
+	}
+
+}

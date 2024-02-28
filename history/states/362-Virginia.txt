@@ -40,7 +40,7 @@ state={
 	}
 
 	local_supplies=11.0
-	manpower=2249080
+	manpower = 8535519 #CORRIGIDO
 	buildings_max_level_factor=1.000
 	state_category=large_city
 }

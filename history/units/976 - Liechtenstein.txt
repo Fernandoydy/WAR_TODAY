@@ -1,8 +1,8 @@
-## Brunei ne ##
+### Vaticano na roma ne ###
 state={
-	id=973
-	name="STATE_973"
-	manpower = 335702
+	id=976
+	name="STATE_976"
+	manpower = 39331 #CORRIGIDO
 	
 	state_category = city
 	
@@ -10,16 +10,17 @@ state={
 	}
 
 	history={
-		owner = BRU
+		owner = LIE
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
 		}
-		add_core_of = BRU
+		add_core_of = LIE
+		add_core_of = SWI
 	}
 
 	provinces={
-		7387 
+		6680
 	}
 
 }

@@ -1,0 +1,24 @@
+### Connecticut (USA) ###
+state={
+	id=967
+	name="STATE_967"
+	manpower = 3565287 #CORRIGIDO
+	
+	state_category = town
+	
+	resources={
+	}
+
+	history={
+		owner = USA
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+	}
+
+	provinces={
+		6909 9847 9850
+	}
+
+}

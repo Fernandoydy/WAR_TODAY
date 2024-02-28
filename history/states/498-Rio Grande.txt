@@ -1,9 +1,9 @@
-
+### Rio Grande do Norte ###
 state={
-	id=498
-	name="STATE_498"
+	id = 498
+	name = "STATE_498"
 
-	history={
+	history = {
 		owner = BRA
 		buildings = {
 			infrastructure = 3
@@ -15,11 +15,11 @@ state={
 
 	}
 
-	provinces={
+	provinces = {
 		2175 10933
 	}
-	manpower=3302729
-	buildings_max_level_factor=1.000
-	state_category=city
-	local_supplies=0.000
+	manpower = 3302729 #CORRIGIDO
+	buildings_max_level_factor = 1.000
+	state_category = city
+	local_supplies = 0.000
 }
