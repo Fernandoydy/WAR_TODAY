@@ -1,0 +1,26 @@
+### Vaticano na roma ne ###
+state={
+	id=976
+	name="STATE_976"
+	manpower = 39331 #CORRIGIDO
+	
+	state_category = city
+	
+	resources={
+	}
+
+	history={
+		owner = LIE
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
+		add_core_of = LIE
+		add_core_of = SWI
+	}
+
+	provinces={
+		6680
+	}
+
+}

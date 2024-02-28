@@ -1,0 +1,25 @@
+## Brunei ne ##
+state={
+	id=973
+	name="STATE_973"
+	manpower = 335702
+	
+	state_category = city
+	
+	resources={
+	}
+
+	history={
+		owner = BRU
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
+		add_core_of = BRU
+	}
+
+	provinces={
+		7387 
+	}
+
+}

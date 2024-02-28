@@ -887,3 +887,15 @@ PRK = {
 	color = rgb {255 1 1 }
 	color_ui = rgb {255 1 1 }
 }
+BRU = {
+	color = rgb {241 255 94 }
+	color_ui = rgb {241 255 94}
+}
+SMR = {
+	color = rgb {25 25 255 }
+	color_ui = rgb {25 25 255}
+}
+LIE = {
+	color = rgb {255 88 76 }
+	color_ui = rgb {255 88 76 }
+}

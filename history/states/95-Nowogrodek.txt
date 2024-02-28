@@ -13,6 +13,9 @@ state={
 
 		}
 		add_core_of = BLR
+		victory_points = {
+			3393 3
+		}
 
 	}
 
