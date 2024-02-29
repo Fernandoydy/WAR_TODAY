@@ -1,0 +1,10 @@
+﻿division_template = {
+}
+
+
+units = {
+}
+
+### Starting Production ###
+instant_effect = {
+}
