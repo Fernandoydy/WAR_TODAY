@@ -1,0 +1,25 @@
+### Base militar britânica na direita da ilha do chipre  ###
+state={
+	id=979
+	name="STATE_979"
+	manpower = 8912
+	
+	state_category = city
+	
+	resources={
+	}
+
+	history={
+		owner = ENG
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = RTC
+		add_core_of = CYP
+	}
+
+	provinces={
+		13280
+	}
+
+}

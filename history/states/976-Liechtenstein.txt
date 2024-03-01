@@ -1,4 +1,4 @@
-### Vaticano na roma ne ###
+### Suiça e Austria ###
 state={
 	id=976
 	name="STATE_976"

@@ -10,11 +10,8 @@ state= {
 
 	history=
 	{
-		owner = ENG
+		owner = CYP
 		add_core_of = CYP
-		victory_points = {
-			11984 5
-		}
 		victory_points = {
 			7193 3
 		}
@@ -27,7 +24,8 @@ state= {
 		}
 
 	}
-	provinces= { 7193 11984 }
-
+	provinces= { 
+		7193 13277 13278 13279
+	}
 	local_supplies=0.0 
 }

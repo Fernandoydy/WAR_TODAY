@@ -899,3 +899,7 @@ LIE = {
 	color = rgb {255 88 76 }
 	color_ui = rgb {255 88 76 }
 }
+RTC = {
+	color = rgb {255 132 104}
+	color_ui = rgb {255 132 104}
+}
