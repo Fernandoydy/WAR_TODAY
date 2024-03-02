@@ -1,0 +1,27 @@
+### bahrein (ilha encima do catar) ###
+state={
+	id=984
+	name="STATE_984"
+	manpower = 1442659
+	
+	state_category = city
+	
+	resources={
+	}
+
+	history={
+		owner = BRN
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = BRN
+		victory_points = {
+			13285 3
+		}
+	}
+
+	provinces={
+		13285
+	}
+
+}

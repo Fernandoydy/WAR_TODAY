@@ -4266,3 +4266,11 @@
  BRN: "Bahrain"
  BRN_DEF: "the Bahrain"
  BRN_ADJ: "Bahraini"
+ ## Ossétia do Sul ##
+ RSO: "South Ossetia"
+ RSO_DEF: "the South Ossetia"
+ RSO_ADJ: "Ossetians"
+ ## Transnístria ##
+ RMP: "Transnistria"
+ RMP_DEF: "Transnistria"
+ RMP_ADJ: "Transnistrian"

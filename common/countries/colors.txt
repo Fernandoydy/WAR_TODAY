@@ -911,3 +911,11 @@ BRN = {
 	color = rgb {240 30 38}
 	color_ui = rgb {240 30 38}
 }
+RSO = {
+	color = rgb {240 30 38}
+	color_ui = rgb {240 30 38}
+}
+RMP = {
+	color = rgb {226 12 21}
+	color_ui = rgb {226 12 21}
+}

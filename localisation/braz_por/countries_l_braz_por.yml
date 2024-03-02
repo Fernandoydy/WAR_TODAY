@@ -4256,3 +4256,11 @@
  BRN: "Bahrein"
  BRN_DEF: "o Bahrein"
  BRN_ADJ: "Baremita"
+ ## Ossétia do Sul ##
+ RSO: "Ossétia do Sul"
+ RSO_DEF: "a Ossétia do Sul"
+ RSO_ADJ: "Ossetas"
+ ## Transnístria ##
+ RMP: "Transnístria"
+ RMP_DEF: "a Transnístria"
+ RMP_ADJ: "Transnístrio"
