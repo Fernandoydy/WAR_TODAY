@@ -995,3 +995,8 @@
  STATE_977: "Northern Cyprus"
  STATE_978: "Akrotiri"
  STATE_979: "Dhekelia"
+ STATE_980: "Southern Israel"
+ STATE_981: "Central District"
+ STATE_982: "Gaza Strip"
+ STATE_983: "West Bank"
+ STATE_984: "Bahrein"

@@ -4258,3 +4258,11 @@
  RTC: "Turkish Republic of Northern Cyprus"
  RTC_DEF: "the Turkish Republic of Northern Cyprus"
  RTC_ADJ: "Turkish Cypriot"
+ ## Palestine ##
+ PLE: "Palestine"
+ PLE_DEF: "the Palestine"
+ PLE_ADJ: "Palestinian"
+ ## Bahrein ##
+ BRN: "Bahrain"
+ BRN_DEF: "the Bahrain"
+ BRN_ADJ: "Bahraini"

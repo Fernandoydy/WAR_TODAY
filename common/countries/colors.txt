@@ -903,3 +903,11 @@ RTC = {
 	color = rgb {255 132 104}
 	color_ui = rgb {255 132 104}
 }
+PLE = {
+	color = rgb {127 10 55}
+	color_ui = rgb {127 10 55}
+}
+BRN = {
+	color = rgb {240 30 38}
+	color_ui = rgb {240 30 38}
+}

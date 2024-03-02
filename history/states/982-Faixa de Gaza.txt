@@ -1,0 +1,29 @@
+### faixa de gaza ###
+state={
+	id=982
+	name="STATE_982"
+	manpower = 2412020
+	
+	state_category = city
+	
+	resources={
+	}
+
+	history={
+		owner = PLE
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+		}
+		add_core_of = PLE
+		victory_points = {
+			13288 3
+		}
+	}
+
+	provinces={
+		13286 13288
+	}
+
+}

@@ -4248,3 +4248,11 @@
  PAP_neutrality_ADJ: "Vaticano"
  PAP_subject_ADJ: "Vaticano"
  PAP_autonomy_supervised_state_ADJ: "Vaticano"
+ ## Palestina ##
+ PLE: "Palestina"
+ PLE_DEF: "a Palestina"
+ PLE_ADJ: "Palestino" 
+ ## Bahrein ##
+ BRN: "Bahrein"
+ BRN_DEF: "o Bahrein"
+ BRN_ADJ: "Baremita"

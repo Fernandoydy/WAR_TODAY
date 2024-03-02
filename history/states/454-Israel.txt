@@ -1,7 +1,7 @@
 
 state={
 	id=454
-	name="STATE_454" #Palestine
+	name="STATE_454" #Jerusalem
 	manpower = 933142
 	
 	state_category = rural
@@ -12,24 +12,15 @@ state={
 			infrastructure = 3 #was: 5
 			industrial_complex = 1
 			air_base = 2
-			4206 = {
-				naval_base = 3
-			}
 		}
 		victory_points = {
-			1086 1 
-		}
-		victory_points = {
-			4206 1 
-		}
-		victory_points = {
-			1065 1 
+			13289 10
 		}
 		add_core_of = ISR
 	}
 
 	provinces={
-		1015 1065 1086 1201 4088 4206 7107 7176 11970 1
+		13289 13291
 	}
 
 	local_supplies=0.0 

@@ -1204,5 +1204,34 @@ VICTORY_POINTS_9206_SWE: "Viborg"
  VICTORY_POINTS_6142_SWE: "Enare"
  VICTORY_POINTS_12512: "Nuuk"
  VICTORY_POINTS_13003: "Tórshavn"
- #MOD
+ #####
+ #MOD#
+ #####
+
+ ## Brazil ##
  VICTORY_POINTS_5208: "Brasília"
+ 
+ ## Cyprus ##
+ VICTORY_POINTS_7193: "Nicosia"
+ 
+ ## Northern of Cyprus ##
+ VICTORY_POINTS_13283: "Northern Nicosia"
+  ## Liechtenstein ##
+ VICTORY_POINTS_13275: "Vaduz"
+
+ ## Vaticano ##
+ VICTORY_POINTS_13273: "Vatican City"
+
+ ## San Marino ##
+ VICTORY_POINTS_13274: "San Marino"
+
+ ## Israel ##
+ VICTORY_POINTS_13289: "Jerusalem"
+ VICTORY_POINTS_13284: "Berseba"
+
+ ## Palestine ##
+ VICTORY_POINTS_7107: "Ramallah"
+ VICTORY_POINTS_13288: "Gaza"
+
+ ## Bahrein ##
+ VICTORY_POINTS_13285: "Manama"
