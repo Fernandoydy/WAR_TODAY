@@ -1,5 +1,8 @@
 {
     "files.associations": {
-        "*.txt": "perl"
-    }
+        "*.txt": "perl",
+        "*.gui": "perl",
+        "*.gfx": "perl"
+    },
+    "git.ignoreLimitWarning": true
 }
