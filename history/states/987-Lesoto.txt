@@ -1,0 +1,26 @@
+## Enclave sul-africano ##
+state={
+	id=987
+	name="STATE_987"
+	manpower = 1343098
+	
+	state_category = rural
+
+	history={
+		owner = LES
+		victory_points = { 
+			12064 10
+		}
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+		}
+		add_core_of = LES
+	}
+
+	provinces={
+	  12064
+	}
+
+	local_supplies=0.0 
+}

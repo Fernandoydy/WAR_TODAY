@@ -919,3 +919,11 @@ RMP = {
 	color = rgb {226 12 21}
 	color_ui = rgb {226 12 21}
 }
+LES = {
+	color = rgb {20 24 90}
+	color_ui = rgb {20 23 90}
+}
+SWZ = {
+	color = rgb {171 53 72}
+	color_ui = rgb {171 53 72}
+}

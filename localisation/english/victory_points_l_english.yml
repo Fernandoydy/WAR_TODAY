@@ -1249,3 +1249,13 @@ VICTORY_POINTS_9206_SWE: "Viborg"
  
  ## Transnistria ##
  VICTORY_POINTS_13296: "Tiráspol"
+
+ #####################
+ ### South Africa ###
+ #####################
+
+ ## Lesotho ##
+ VICTORY_POINTS_12064: "Maseru"
+
+ ## Eswatini ##
+ VICTORY_POINTS_7900: "Mbabane"

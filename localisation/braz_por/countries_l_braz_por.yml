@@ -4059,11 +4059,15 @@
  JAN_DEF: "a Ilha de Jan Mayen"
  JAN_ADJ: "Polar"
  
- #########
- ## mod ##
- ######### 
+ ###################################
+ ## mod que estamos desenvolvendo ##
+ ###################################
 
- ## Sudão do Sul
+ #####################
+ ## Norte da África ##
+ #####################
+
+ ## Sudão do Sul ##
  SSD_fascism: "Sudão do Sul"
  SSD_fascism_DEF: "o Sudão do Sul"
  SSD_democratic: "República do Sudão"
@@ -4079,6 +4083,11 @@
  SSD: "Sudão do Sul"
  SSD_DEF: "o Sudão do Sul"
  SSD_ADJ: "Sul-Sudanês(a)"
+ 
+ ####################
+ ## África Central ##
+ ####################
+
  ## DR. Congo ##
  COG_fascism: "Império da África Central"
  COG_fascism_DEF: "o Império da África Central"
@@ -4095,6 +4104,11 @@
  COG: "República Democrática do Congo"
  COG_DEF: "a República Democrática do Congo"
  COG_ADJ: "Congolês"
+ 
+ ####################
+ ## Leste Africano ##
+ ####################
+
  ## Somália ##
  SOM_fascism: "Império Ajuraan"
  SOM_fascism_DEF: "o Império Ajuraan"
@@ -4111,6 +4125,11 @@
  SOM: "Somália"
  SOM_DEF: "a Somália"
  SOM_ADJ: "Somali"
+ 
+ ####################
+ ## Oeste Africano ##
+ ####################
+
  ## Burkina Faso ##
  VOL_fascism: "Autoridade de Alto Volta"
  VOL_fascism_DEF: "a Autoridade de Alto Volta"
@@ -4127,6 +4146,25 @@
  VOL: "Burquina Fasso"
  VOL_DEF: "a Burquina Fasso"
  VOL_ADJ: "Burquinense"
+
+ ##################
+ ## Sul Africano ##
+ ##################
+
+ ## Lesoto ##
+ LES: "Lesoto"
+ LES_DEF: "o Lesoto"
+ LES_ADJ: "Basoto"
+
+ ## Essuatíni ##
+ SWZ: "Essuatíni"
+ SWZ_DEF: "o Essuatíni"
+ SWZ_ADJ: "Suasi"
+
+ ####################
+ ## Europa Central ##
+ ####################
+
  ## Tchéquia ##
  CZE_fascism: "Império Boêmio"
  CZE_fascism_DEF: "o Império Boêmio"
@@ -4145,6 +4183,7 @@
  CZE_ADJ: "Tchecoslovaco(a)"
  CZE_subject: "$CZE$ do governo $OVERLORDADJ$"
  CZE_subject_DEF: "a $CZE$ do governo $OVERLORDADJ$"
+ 
  ## Alemanha ##
  GER_fascism: "Reich Alemão"
  GER_fascism_DEF: "o Reich Alemão"
@@ -4168,66 +4207,26 @@
  GER: "Alemanha"
  GER_DEF: "Alemanha"
  GER_ADJ: "Alemão(ã)"
- ## Coreia do Norte ##
- PRK_communism: "Coreia do Norte"
- PRK_communism_DEF: "a Coreia do Norte"
- PRK_communism_ADJ: "Norte-Coreano"
- PRK_democratic: "República Democrática da Coreia"
- PRK_democratic_DEF: "a República Democrática da Coreia"
- PRK_democratic_ADJ: "Norte-Coreano"
- PRK_fascism: "Império Coreano"
- PRK_fascism_DEF: "o Império Coreano"
- PRK_fascism_ADJ: "Norte-Coreano"
- PRK_neutrality: "Coreia do Norte"
- PRK_neutrality_DEF: "a Coreia do Norte"
- PRK_neutrality_ADJ: "Norte-Coreano"
- PRK: "Coreia do Norte"
- PRK_DEF: "a Coreia do Norte"
- PRK_ADJ: "Norte-Coreano"
- ## Coreia do Sul ##
- KOR_fascism: "Império Sul-Coreamo"
- KOR_fascism_DEF: "o Império Sul-Coreamo"
- KOR_democratic: "Coreia do Sul"
- KOR_democratic_DEF: "a Coreia do Sul"
- KOR_neutrality: "República da Coreia"
- KOR_neutrality_DEF: "a República da Coreia"
- KOR_communism: "República Democrática da Coreia"
- KOR_communism_DEF: "a República Democrática da Coreia"
- KOR_fascism_ADJ: "Sul-Coreano"
- KOR_democratic_ADJ: "Sul-Coreano"
- KOR_neutrality_ADJ: "Sul-Coreano"
- KOR_communism_ADJ: "Sul-Coreano"
- KOR: "Coreia do Sul"
- KOR_DEF: "a Coreia do Sul"
- KOR_ADJ: "Sul-Coreano"
- ## Brunei ## 
- BRU: "Brunei"
- BRU_DEF: "o Brunei"
- BRU_ADJ: "Bruneano"
- BRU_neutrality: "Brunei"
- BRU_neutrality_DEF: "o Brunei"
- BRU_neutrality_ADJ: "Bueneano"
- BRU_communism: "República Popular do Brunei"
- BRU_communism_DEF: "a República Popular do Brunei"
- BRU_communism_ADJ: "Bruneano"
- BRU_democratic: "República do Brunei"
- BRU_democratic_DEF: "a república do Brunei"
- BRU_democratic_ADJ: "Bruneano"
- BRU_fascism: "Império do Brunei"
- BRU_fascism_DEF: "o Império do Brunei"
- BRU_fascism_ADJ: "Bruneano"
- ## San marino ##
- SMR: "San Marino"
- SMR_DEF: "o San Marino"
- SMR_ADJ: "Samarinês"
+ 
  ## Liechtenstein ##
  LIE: "Liechtenstein"
  LIE_DEF: "o Liechtenstein"
  LIE_ADJ: "liechtensteinense"
+
+ #################
+ ## Sul Europeu ##
+ #################
+ 
+ ## San marino ##
+ SMR: "San Marino"
+ SMR_DEF: "o San Marino"
+ SMR_ADJ: "Samarinês"
+ 
  ## República Turca do Norte do Chipre ##
  RTC: "República Turca do Norte do Chipre"
  RTC_DEF: "a República Turca do Norte do Chipre"
  RTC_ADJ: "Turco-Cipriota"
+ 
  ## Vaticano ##
  PAP: "Vaticano"
  PAP_fascism: "Reino de Deus"
@@ -4248,19 +4247,90 @@
  PAP_neutrality_ADJ: "Vaticano"
  PAP_subject_ADJ: "Vaticano"
  PAP_autonomy_supervised_state_ADJ: "Vaticano"
- ## Palestina ##
- PLE: "Palestina"
- PLE_DEF: "a Palestina"
- PLE_ADJ: "Palestino" 
- ## Bahrein ##
- BRN: "Bahrein"
- BRN_DEF: "o Bahrein"
- BRN_ADJ: "Baremita"
- ## Ossétia do Sul ##
- RSO: "Ossétia do Sul"
- RSO_DEF: "a Ossétia do Sul"
- RSO_ADJ: "Ossetas"
+  
+ ###################
+ ## Leste Europeu ##
+ ###################
+
  ## Transnístria ##
  RMP: "Transnístria"
  RMP_DEF: "a Transnístria"
  RMP_ADJ: "Transnístrio"
+
+ #####################
+ ## Extremo Oriente ##
+ #####################
+
+ ## Coreia do Norte ##
+ PRK_communism: "Coreia do Norte"
+ PRK_communism_DEF: "a Coreia do Norte"
+ PRK_communism_ADJ: "Norte-Coreano"
+ PRK_democratic: "República Democrática da Coreia"
+ PRK_democratic_DEF: "a República Democrática da Coreia"
+ PRK_democratic_ADJ: "Norte-Coreano"
+ PRK_fascism: "Império Coreano"
+ PRK_fascism_DEF: "o Império Coreano"
+ PRK_fascism_ADJ: "Norte-Coreano"
+ PRK_neutrality: "Coreia do Norte"
+ PRK_neutrality_DEF: "a Coreia do Norte"
+ PRK_neutrality_ADJ: "Norte-Coreano"
+ PRK: "Coreia do Norte"
+ PRK_DEF: "a Coreia do Norte"
+ PRK_ADJ: "Norte-Coreano"
+ 
+ ## Coreia do Sul ##
+ KOR_fascism: "Império Sul-Coreamo"
+ KOR_fascism_DEF: "o Império Sul-Coreamo"
+ KOR_democratic: "Coreia do Sul"
+ KOR_democratic_DEF: "a Coreia do Sul"
+ KOR_neutrality: "República da Coreia"
+ KOR_neutrality_DEF: "a República da Coreia"
+ KOR_communism: "República Democrática da Coreia"
+ KOR_communism_DEF: "a República Democrática da Coreia"
+ KOR_fascism_ADJ: "Sul-Coreano"
+ KOR_democratic_ADJ: "Sul-Coreano"
+ KOR_neutrality_ADJ: "Sul-Coreano"
+ KOR_communism_ADJ: "Sul-Coreano"
+ KOR: "Coreia do Sul"
+ KOR_DEF: "a Coreia do Sul"
+ KOR_ADJ: "Sul-Coreano"
+ 
+ ######################
+ ## Sudeste asiático ##
+ ######################
+
+ ## Brunei ## 
+ BRU: "Brunei"
+ BRU_DEF: "o Brunei"
+ BRU_ADJ: "Bruneano"
+ BRU_neutrality: "Brunei"
+ BRU_neutrality_DEF: "o Brunei"
+ BRU_neutrality_ADJ: "Bueneano"
+ BRU_communism: "República Popular do Brunei"
+ BRU_communism_DEF: "a República Popular do Brunei"
+ BRU_communism_ADJ: "Bruneano"
+ BRU_democratic: "República do Brunei"
+ BRU_democratic_DEF: "a república do Brunei"
+ BRU_democratic_ADJ: "Bruneano"
+ BRU_fascism: "Império do Brunei"
+ BRU_fascism_DEF: "o Império do Brunei"
+ BRU_fascism_ADJ: "Bruneano"
+
+ ###################
+ ## Oriente Médio ##
+ ###################
+
+ ## Palestina ##
+ PLE: "Palestina"
+ PLE_DEF: "a Palestina"
+ PLE_ADJ: "Palestino" 
+ 
+ ## Bahrein ##
+ BRN: "Bahrein"
+ BRN_DEF: "o Bahrein"
+ BRN_ADJ: "Baremita"
+ 
+ ## Ossétia do Sul ##
+ RSO: "Ossétia do Sul"
+ RSO_DEF: "a Ossétia do Sul"
+ RSO_ADJ: "Ossetas"
