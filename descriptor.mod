@@ -1,5 +1,4 @@
 ﻿version="1.0.0"
-replace_path= "history"
 tags={
 	"Alternative History"
 	"Gameplay"
