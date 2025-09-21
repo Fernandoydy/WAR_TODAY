@@ -1136,7 +1136,7 @@
  STATE_959: "Los Andes"
  STATE_960: "San Juan e La Rioja"
  STATE_961: "Amazônia" #impassables
- STATE_962: "Amazônia" #impassables
+ STATE_962: "Alagoas" #Aamzon impassables
  STATE_963: "Paraíba" #Amazon impassables
  STATE_964: "Amazônia" #impassables
  STATE_965: "Sergipe" #Amazon impassables
