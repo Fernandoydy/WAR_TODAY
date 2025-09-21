@@ -1,8 +1,8 @@
-state={
+state={ #Paraíba
 	id=963
 	name="STATE_963"
 	provinces={
-		10960 12965 
+		2227 7561 10989
 	}
 	history={
 		owner = BRA
