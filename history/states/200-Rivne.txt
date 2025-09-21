@@ -6,8 +6,7 @@ state = {
 
 	history = {
 
-		owner = SOV
-		add_core_of = SOV
+		owner = UKR
 		add_core_of = UKR
 
 		victory_points = {
@@ -17,16 +16,11 @@ state = {
 		buildings = {
 			infrastructure = 3 #was: 5
 			air_base = 3
+			industrial_complex = 1
 
 			# Dnieprostroi Hydroelectric Station
 			11405 = { dam = 1 }
 			
-		}
-		
-		1939.1.1 = {
-			buildings = {
-				industrial_complex = 1
-			}
 		}
 	}
 
