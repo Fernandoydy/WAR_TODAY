@@ -1,4 +1,4 @@
-state={
+state={ #Sergipe
 	id=965
 	name="STATE_965"
 	provinces={

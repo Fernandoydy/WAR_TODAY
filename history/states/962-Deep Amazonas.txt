@@ -1,15 +1,14 @@
-state={
+state={ #Alagoas
 	id=962
 	name="STATE_962"
 	provinces={
-		13330 
+		1524 10998
 	}
 	history={
 		owner = BRA
 		add_core_of = BRA
 	}
 	manpower=10348
-	impassable = yes
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
 	state_category=wasteland
