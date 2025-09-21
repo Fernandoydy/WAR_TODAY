@@ -1137,13 +1137,13 @@
  STATE_960: "San Juan e La Rioja"
  STATE_961: "Amazônia" #impassables
  STATE_962: "Amazônia" #impassables
- STATE_963: "Paraíba"  #Amazonia impassável 
+ STATE_963: "Paraíba" #Amazon impassables
  STATE_964: "Amazônia" #impassables
- STATE_965: "Sergipe" #Amazonia impassables
+ STATE_965: "Sergipe" #Amazon impassables
  STATE_966: "Amazônia" #impassables
  STATE_967: "Amazônia" #impassables
  STATE_968: "Amazônia" #impassables
- STATE_969: "Rio Branco"
+ STATE_969: "Roraima"
  STATE_970: "Debar"
  ALB_STATE_970: "Dibër"
  TUR_STATE_970: "Debre"
