@@ -11,10 +11,8 @@ state = {
 
 	history = {
 
-		owner = SOV
-		add_core_of = SOV
+		owner = UKR
 		add_core_of = UKR
-		add_core_of = CRI
 
 		victory_points = {
 			721 1 # Kherson
@@ -23,10 +21,6 @@ state = {
 		buildings = {
 			infrastructure = 3 #was: 5
 			air_base = 3
-
-			# Kakhovka Dam
-			#737 = { dam = 1 }
-			
 		}
 		
 	}
