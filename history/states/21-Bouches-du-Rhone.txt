@@ -17,7 +17,7 @@ state={
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
-			dockyard = 1
+			dockyard = 2
 			arms_factory = 1
 			fuel_silo = 1
 			air_base = 10
@@ -26,13 +26,7 @@ state={
 				coastal_bunker = 1
 			}
 		}
-		add_core_of = OCC
 		add_core_of = FRA
-		1939.1.1 = {
-			buildings = {
-				dockyard = 2
-			}
-		}
 	}
 
 	provinces={

@@ -9,7 +9,6 @@ state = {
 
 		owner = GER
 		add_core_of = GER
-		add_core_of = BAY
 
 		victory_points = {
 			11544 10 # Nuremberg
@@ -26,12 +25,7 @@ state = {
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 2
-		}
-
-		1939.1.1 = {
-			buildings = {
-				air_base = 3
-			}
+			air_base = 3
 		}
 	}
 

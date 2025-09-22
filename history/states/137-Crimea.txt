@@ -28,12 +28,13 @@ state = {
 		buildings = {
 
 			infrastructure = 3
-			dockyard = 1
+			dockyard = 2
 			air_base = 3
 
 			3686 = {
 				naval_base = 10
 				coastal_bunker = 3
+				naval_facility = 1
 			}
 
 			9680 = {
@@ -44,16 +45,7 @@ state = {
 		}
 
 		add_core_of = SOV
-		add_core_of = CRI
-
-		1939.1.1 = {
-			buildings = {
-				dockyard = 2
-				3686 = {
-					naval_facility = 1 # Sevastopol Naval Facilties
-				}
-			}
-		}
+		add_core_of = UKR
 	}
 
 	provinces = {

@@ -8,8 +8,6 @@ state = {
 
 		owner = GER
 		add_core_of = GER
-		add_core_of = SHL
-		add_core_of = PRE
 
 		victory_points = {
 			6389 10 # Kiel
@@ -20,21 +18,14 @@ state = {
 		}
 
 		buildings = {
+			synthetic_refinery = 3
+			anti_air_building = 5
 			infrastructure = 3
-			arms_factory = 1
-			dockyard = 6
+			arms_factory = 3
+			dockyard = 7
 			air_base = 5
 			6389 = {
 				naval_base = 8	
-			}
-		}
-		
-		1939.1.1 = {
-			buildings = {
-				synthetic_refinery = 3
-				anti_air_building = 5
-				dockyard = 7
-				arms_factory = 3
 			}
 		}
 	}

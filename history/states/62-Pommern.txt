@@ -10,7 +10,6 @@ state = {
 
 		owner = GER
 		add_core_of = GER
-		add_core_of = PRE
 
 		victory_points = {
 			9388 1 # Stralsund
@@ -21,18 +20,15 @@ state = {
 		}
 		
 		buildings = {
+			air_base = 8
 			infrastructure = 3
 			fuel_silo = 1
+			9388 = { #Not exact match with historical location but has supplies
+					air_facility = 1 #Representing Peenemünde's Research Facilities
+			}			
 		}
 
-		1939.1.1 = {
-			buildings = {
-				air_base = 8
-				9388 = { #Not exact match with historical location but has supplies
-					air_facility = 1 #Representing Peenemünde's Research Facilities
-				}
-			}
-		}
+
 	}
 
 	provinces = {
