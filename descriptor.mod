@@ -5,8 +5,11 @@ tags={
 	"Events"
 	"Graphics"
 }
-replace_path="map/strategicregions"
-replace_path="map/supplyareas"
+replace_path = "gfx/flags"
+replace_path = "gfx/flags/medium"
+replace_path =" gfx/flags/small"
+replace_path = "map/strategicregions"
+replace_path = "map/supplyareas"
 name="WAR_TODAY"
 #picture = "thumbnail.png"
 supported_version="1.16.9"
