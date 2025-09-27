@@ -1,0 +1,438 @@
+RAJ_india_united = {
+	name = "India United"
+	desc = ""
+
+	allowed = {
+		original_tag = RAJ
+		has_dlc = "Graveyard of Empires"
+	}
+	enable = {
+		OR = {
+			has_country_flag = RAJ_AI_RANDOM_INDIA_UNITED
+			has_game_rule = {
+				rule = RAJ_ai_behavior
+				option = GOE_INDIA_UNITED
+			}
+		}
+	}
+	abort = {
+		#is_subject = no
+	}
+
+	ai_national_focuses = {
+	}
+
+	research = {
+		industry = 20.0
+		infantry_tech = 15.0
+		artillery = 8.0
+		support_tech = 6.5
+	}
+
+	ideas = {
+		
+	}
+
+	traits = {
+		captain_of_industry = 5
+		war_industrialist = 5
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+
+}
+
+RAJ_bose = {
+	name = "Bose Path"
+	desc = ""
+
+	allowed = {
+		original_tag = RAJ
+		has_dlc = "Graveyard of Empires"
+	}
+	enable = {
+		OR = {
+			has_country_flag = RAJ_AI_RANDOM_INDIA_BOSE
+			has_game_rule = {
+				rule = RAJ_ai_behavior
+				option = GOE_INDIA_FASCISM_BOSE
+			}
+		}
+	}
+	abort = {
+		#is_subject = no
+	}
+
+	ai_national_focuses = {		
+	}
+
+	research = {
+		industry = 20.0
+		infantry_tech = 15.0
+		artillery = 8.0
+		support_tech = 6.5
+	}
+
+	ideas = {
+		
+	}
+
+	traits = {
+
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+
+}
+
+
+
+
+RAJ_hindutva = {
+	name = "Fascism - Hindutva"
+	desc = ""
+
+	allowed = {
+		original_tag = RAJ
+		has_dlc = "Graveyard of Empires"
+	}
+	enable = {
+		OR = {
+			has_country_flag = RAJ_AI_RANDOM_INDIA_HINDUTVA
+			has_game_rule = {
+				rule = RAJ_ai_behavior
+				option = GOE_INDIA_FASCISM_HINDUTVA	
+			}
+		}
+	}
+	abort = {
+		#is_subject = no
+	}
+
+	ai_national_focuses = {		
+	}
+
+	research = {
+		industry = 20.0
+		infantry_tech = 15.0
+		artillery = 8.0
+		support_tech = 6.5
+	}
+
+	ideas = {
+		
+	}
+
+	traits = {
+
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+
+}
+
+RAJ_east_india_company = {
+	name = "Unaligned - East India Company"
+	desc = ""
+
+	allowed = {
+		original_tag = RAJ
+		has_dlc = "Graveyard of Empires"
+	}
+	enable = {
+		OR = {
+			has_country_flag = RAJ_AI_RANDOM_INDIA_EAST_INDIA_COMPANY
+			has_game_rule = {
+				rule = RAJ_ai_behavior
+				option = GOE_INDIA_EAST_INDIA_COMPANY	
+			}
+		}
+	}
+	abort = {
+		#is_subject = no
+	}
+
+	ai_national_focuses = {
+	}
+
+	research = {
+		industry = 20.0
+		infantry_tech = 15.0
+		artillery = 8.0
+		support_tech = 6.5
+	}
+
+	ideas = {
+		
+	}
+
+	traits = {
+
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+
+}
+
+RAJ_mughal = {
+	name = "Unaligned - Mughal Empire"
+	desc = ""
+
+	allowed = {
+		original_tag = RAJ
+		has_dlc = "Graveyard of Empires"
+	}
+	enable = {
+		OR = {
+			has_country_flag = RAJ_AI_RANDOM_INDIA_MUGHAL
+			has_game_rule = {
+				rule = RAJ_ai_behavior
+				option = GOE_INDIA_MUGHAL	
+			}
+		}
+	}
+	abort = {
+		#is_subject = no
+	}
+
+	ai_national_focuses = {
+	}
+
+	research = {
+		industry = 20.0
+		infantry_tech = 15.0
+		artillery = 8.0
+		support_tech = 6.5
+	}
+
+	ideas = {
+		
+	}
+
+	traits = {
+
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+
+}
+
+RAJ_communist = { # AGRARIAN SOCIALISM
+	name = "Communism"
+	desc = ""
+
+	allowed = {
+		original_tag = RAJ
+		has_dlc = "Graveyard of Empires"
+	}
+	enable = {
+		OR = {
+			has_country_flag = RAJ_AI_RANDOM_INDIA_COMMUNISM
+			has_game_rule = {
+				rule = RAJ_ai_behavior
+				option = GOE_INDIA_COMMUNISM	
+			}
+		}
+	}
+	abort = {
+		#is_subject = no
+	}
+
+	ai_national_focuses = {
+	}
+
+	research = {
+		industry = 20.0
+		infantry_tech = 15.0
+		artillery = 8.0
+		support_tech = 6.5
+	}
+
+	ideas = {
+		
+	}
+
+	traits = {
+
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+
+}
+
+RAJ_communist_urban = { # AGRARIAN SOCIALISM
+	name = "Communism - Urban"
+	desc = ""
+
+	allowed = {
+		original_tag = RAJ
+		has_dlc = "Graveyard of Empires"
+	}
+	enable = {
+		OR = {
+			has_country_flag = RAJ_AI_RANDOM_INDIA_COMMUNISM_URBAN
+			has_game_rule = {
+				rule = RAJ_ai_behavior
+				option = GOE_INDIA_COMMUNISM_URBAN
+			}
+		}
+	}
+	abort = {
+		#is_subject = no
+	}
+
+	ai_national_focuses = {
+	}
+
+	research = {
+		industry = 20.0
+		infantry_tech = 15.0
+		artillery = 8.0
+		support_tech = 6.5
+	}
+
+	ideas = {
+		
+	}
+
+	traits = {
+
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+
+}
+
+
+
+RAJ_loyalty_branch = { # 
+	name = "Loyalty Branch"
+	desc = ""
+
+	allowed = {
+		original_tag = RAJ
+		has_dlc = "Graveyard of Empires"
+	}
+	enable = {
+		OR = {
+			has_country_flag = RAJ_AI_RANDOM_INDIA_LOYALTY
+			has_game_rule = {
+				rule = RAJ_ai_behavior
+				option = GOE_INDIA_LOYALTY
+			}
+		}
+	}
+	abort = {
+		#is_subject = no
+	}
+
+	ai_national_focuses = {
+	}
+
+	research = {
+		industry = 20.0
+		infantry_tech = 15.0
+		artillery = 8.0
+		support_tech = 6.5
+	}
+
+	ideas = {
+		
+	}
+
+	traits = {
+
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+
+}
+
