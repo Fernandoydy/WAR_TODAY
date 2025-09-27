@@ -1116,7 +1116,7 @@
  STATE_939: "Amapá"
  STATE_940: "Acre"
  STATE_941: "Tocantins"
- STATE_942: "Guaporé" #can be renamed to Rondônia later
+ STATE_942: "Rondônia" #can be renamed to Rondônia later
  STATE_943: "Espírito Santo"
  STATE_944: "Paraná"
  STATE_945: "Cerro Largo"
