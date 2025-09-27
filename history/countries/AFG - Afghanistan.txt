@@ -127,7 +127,6 @@ IF = {
 	set_variable = { AFG_army_supply_factor = 0 }
 	set_variable = { AFG_army_supply_combat_penalties_on_core_factor = 0 }
 
-
 	add_dynamic_modifier = {
 		modifier = AFG_quami_modifier
 	}
@@ -300,125 +299,6 @@ IF = {
 }
 
 1939.1.1 = {
-
-	add_political_power = 1198
-	add_command_power = 100
-	
-	IF = {
-		limit = {
-			has_dlc = "Graveyard of Empires"
-		}
-		#1936
-		complete_national_focus = AFG_support_king_zahir
-		complete_national_focus = AFG_expand_telegraph_network
-		complete_national_focus = AFG_biding_our_time
-		complete_national_focus = AFG_visit_foreign_capitals
-		complete_national_focus = AFG_placeholder_1
-		complete_national_focus = AFG_fruit_packing
-		complete_national_focus = AFG_ministry_of_supply
-		complete_national_focus = AFG_implement_currency_controls
-		complete_national_focus = AFG_sugar_processing
-		complete_national_focus = AFG_clear_malarial_swamps
-		 #1937
-		complete_national_focus = AFG_clear_malarial_swamps
-		complete_national_focus = AFG_infrastructure_construction
-		complete_national_focus = AFG_electrification
-		complete_national_focus = AFG_establish_radio_networks
-		#1938
-		complete_national_focus = AFG_expand_karakul_lambskin_industry
-		complete_national_focus = AFG_reform_2
-		complete_national_focus = AFG_secure_dynasty
-		complete_national_focus = AFG_maintain_neutrality
-		#1939
-		complete_national_focus = AFG_qargha_dam
-		complete_national_focus = AFG_adopt_nufus
-		complete_national_focus = AFG_introduce_national_service
-		complete_national_focus = AFG_new_army
-
-		diplomatic_relation = {
-			country = TUR
-			relation = non_aggression_pact
-			active = yes
-		}
-
-		diplomatic_relation = {
-			country = PER
-			relation = non_aggression_pact
-			active = yes
-		}
-
-		diplomatic_relation = {
-			country = IRQ
-			relation = non_aggression_pact
-			active = yes
-		}
-
-		add_dynamic_modifier = { modifier = SSB_saadabad_pact }
-	}
-	IF = {
-		limit = {
-			NOT = { has_dlc = "Graveyard of Empires" }
-		}
-		# Generic focuses
-		complete_national_focus = army_effort
-		complete_national_focus = equipment_effort
-		complete_national_focus = motorization_effort
-		complete_national_focus = aviation_effort
-		complete_national_focus = construction_effort_2
-		complete_national_focus = production_effort_2
-		complete_national_focus = infrastructure_effort
-		complete_national_focus = industrial_effort
-		complete_national_focus = construction_effort
-		complete_national_focus = production_effort		
-	}
-	
-
-	oob = "AFG_1939"
-	if = {
-		limit = { has_dlc = "By Blood Alone" }
-			set_air_oob = "AFG_1939_air_bba"
-		else = {
-			set_air_oob = "AFG_1939_air_legacy"
-			set_technology = {
-				early_fighter = 1
-				CAS1 = 1
-			}
-		}
-	}
-	set_technology = {
-		
-		gw_artillery = 1
-
-		#doctrines
-		air_superiority = 1
-		grand_battle_plan = 1
-		trench_warfare = 1
-		fleet_in_being = 1
-		battlefleet_concentration = 1
-		convoy_sailing = 1
-
-
-		#electronics
-		electronic_mechanical_engineering = 1
-		radio = 1
-		mechanical_computing = 1
-
-		#industry
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		advanced_machine_tools = 1
-		fuel_silos = 1
-		construction1 = 1
-		construction2 = 1
-		dispersed_industry = 1
-		dispersed_industry2 = 1
-	}
-	complete_special_project = {
-		project = sp:sp_air_radar
-	}
-}
-
-1939.1.1 = {
 	set_politics = {
 		ruling_party = neutrality
 		last_election = "1936.1.1"
@@ -431,4 +311,3 @@ IF = {
 		neutrality = 70
 	}
 }
-

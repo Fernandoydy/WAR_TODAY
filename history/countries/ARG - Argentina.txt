@@ -202,130 +202,7 @@ IF = {
 	}
 }
 
-
-
 set_country_flag = monroe_doctrine
-
-1939.1.1 = {
-
-	add_political_power = 1198
-	add_command_power = 100
-	IF = {
-		limit = {
-			has_dlc = "Trial of Allegiance"
-		}
-
-		complete_national_focus = SMB_army #35
-		complete_national_focus = SMB_navy #35
-		complete_national_focus = ARG_roberto_maria_ortiz
-		complete_national_focus = ARG_defense_and_democracy
-		complete_national_focus = ARG_banco_central_de_la_republica_argentina
-		complete_national_focus = ARG_crack_down_on_corruption #35
-		complete_national_focus = ARG_industrial_expansion
-		complete_national_focus = ARG_british_cooperation
-		complete_national_focus = ARG_rapid_urbanization
-		complete_national_focus = ARG_import_substitution #35
-		complete_national_focus = ARG_agricultural_improvements
-		complete_national_focus = ARG_military_production_lines
-		complete_national_focus = ARG_emphasis_on_public_works #35
-		complete_national_focus = ARG_economic_reactivation_act #35
-		complete_national_focus = ARG_towards_a_greater_argentina
-		complete_national_focus = ARG_universidad_de_buenos_aires
-		complete_national_focus = SMB_air_force #35
-
-		ELSE = {
-			#generic focuses
-			complete_national_focus = army_effort
-			complete_national_focus = equipment_effort
-			complete_national_focus = motorization_effort
-			complete_national_focus = aviation_effort
-			complete_national_focus = naval_effort
-			complete_national_focus = large_navy
-			complete_national_focus = industrial_effort
-			complete_national_focus = construction_effort
-			complete_national_focus = production_effort
-		}
-	}
-	
-	oob = "ARG_1939"
-	IF = {
-		limit = { has_dlc = "Man the Guns" }
-			set_naval_oob = "ARG_1939_naval_mtg"
-		ELSE = {
-			set_naval_oob = "ARG_1939_naval_legacy"
-		}
-	}
-	IF = {
-		limit = { has_dlc = "By Blood Alone" }
-			set_air_oob = "ARG_1939_air_bba"
-			set_technology = {
-				iw_medium_airframe = 1
-				bba_early_transport_plane = 1
-			}
-		ELSE = {
-			set_air_oob = "ARG_1939_air_legacy"
-			set_technology = {
-				early_bomber = 1
-				naval_bomber1 = 1
-				early_transport_plane = 1
-			}
-		}
-	}
-
-	set_technology = {
-		interwar_artillery = 1
-		infantry_weapons1 = 1
-		infantry_weapons2 = 1
-		support_weapons = 1
-		tech_support = 1
-		tech_engineers = 1
-
-		#doctrines
-		air_superiority = 1
-		grand_battle_plan = 1
-		trench_warfare = 1
-		fleet_in_being = 1
-		battlefleet_concentration = 1
-		convoy_sailing = 1
-
-
-		#electronics
-		electronic_mechanical_engineering = 1
-		radio = 1
-		mechanical_computing = 1
-		computing_machine = 1
-
-		#industry
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		advanced_machine_tools = 1
-		synth_oil_experiments = 1
-		fuel_silos = 1
-		oil_processing = 1
-		improved_oil_processing = 1
-		construction1 = 1
-		construction2 = 1
-		dispersed_industry = 1
-		dispersed_industry2 = 1
-	}
-	complete_special_project = {
-		project = sp:sp_air_radar
-	}
-	IF = {
-		limit = { NOT = { has_dlc = "Man the Guns" } }
-		set_technology = {
-			basic_destroyer = 1
-			basic_light_cruiser = 1
-		}
-	}
-	IF = {
-		limit = { has_dlc = "Man the Guns" }
-		set_technology = {
-			basic_light_battery = 1
-			basic_medium_battery = 1
-		}
-	}
-}
 
 set_convoys = 120
 
@@ -361,7 +238,6 @@ set_popularities = {
 	promote_character = ARG_roberto_maria_ortiz
 	retire_character = ARG_agustín_pedro_justo
 }
-
 
 ### VARIANTS ###
 # 1936 Start #

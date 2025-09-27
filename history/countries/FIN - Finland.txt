@@ -108,7 +108,6 @@ set_variable = { FIN_organize_the_opposition_dec_cost = 25 }
 set_variable = { FIN_appeal_to_the_finnish_spirit_dec_cost = 75 }
 set_variable = { FIN_entice_the_masses_dec_cost = 50 }
 
-
 ### FOCUS ###
 set_variable = { FIN_subsidized_national_industrialization_factories_required = 30 }
 
@@ -136,7 +135,6 @@ set_variable = { FIN_mineral_wealth_development_aluminium_amount = 6 } #6 by def
 set_variable = { FIN_prioritize_light_industry_dec_cost = 50 } #Will be duplicated if the opposite NS is active
 set_variable = { FIN_prioritize_heavy_industry_dec_cost = 50 } #Will be duplicated if the opposite NS is active
 
-
 145 = {
 	set_demilitarized_zone = yes
 }
@@ -155,7 +153,6 @@ if = {
 	#SISU NS
 	add_ideas = FIN_sisu_2
 }
-
 
 if = {
 	limit = { has_dlc = "Man the Guns" }
@@ -232,7 +229,6 @@ if = {
 	recruit_character = FIN_toivo_antikainen
 }
 
-
 ### NAVY LEADERS
 recruit_character = FIN_ragnar_hakola
 recruit_character = FIN_svante_sundman
@@ -272,7 +268,6 @@ recruit_character = FIN_kaarlo_somerto
 recruit_character = FIN_reino_hallamaa
 recruit_character = FIN_johan_arajuuri
 recruit_character = GER_nikolaus_von_falkenhorst #Defined in the German char file
-
 
 ### POLITICAL ADVISORS ###
 recruit_character = FIN_ake_henrik_gartz
@@ -355,7 +350,6 @@ if = {
 		set_character_flag = FIN_anti_fascist_character_flag
 	}
 
-
 	##Unit Leaders
 	FIN_aksel_airo = {
 		set_character_flag = FIN_anti_communist_character_flag
@@ -393,7 +387,6 @@ if = {
 		set_character_flag = FIN_anti_communist_character_flag
 	}
 
-	
 	FIN_aarne_sihvo = {
 		set_character_flag = FIN_anti_fascist_character_flag
 	}
@@ -411,7 +404,6 @@ if = {
 	}
 
 }
-
 
 add_ideas = {
 	limited_conscription
@@ -450,165 +442,6 @@ if = {
 
 set_convoys = 5
 
-1939.1.1 = {
-	add_political_power = 1198
-	add_command_power = 100
-
-	### TECH ###
-	set_technology = {
-		interwar_artillery = 1
-		interwar_antitank = 1
-		infantry_weapons2 = 1
-		support_weapons = 1
-		support_weapons2 = 1
-
-		#Air
-		iw_small_airframe = 1
-		basic_small_airframe = 1
-		aa_lmg = 1
-		engines_1 = 1
-
-		#electronics
-		electronic_mechanical_engineering = 1
-		radio = 1
-		mechanical_computing = 1
-		computing_machine = 1
-
-		#industry
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		advanced_machine_tools = 1
-		synth_oil_experiments = 1
-		fuel_silos = 1
-		oil_processing = 1
-		improved_oil_processing = 1
-		construction1 = 1
-		construction2 = 1
-		construction3 = 1
-		dispersed_industry = 1
-		dispersed_industry2 = 1
-		dispersed_industry3 = 1
-		
-		#doctrines
-		force_rotation = 1
-		fighter_baiting = 1
-
-		grand_battle_plan = 1
-		trench_warfare = 1
-		fleet_in_being = 1
-		battlefleet_concentration = 1
-		submarine_operations = 1
-	}
-
-	complete_special_project = {
-		project = sp:sp_air_radar
-	}
-
-	# TECH ADJUSTMENTS
-	set_technology = {
-		motorised_infantry = 1
-	}
-
-	if = {
-		limit = {
-			has_dlc = "No Step Back"
-		}
-		set_technology = {
-			gwtank_chassis = 1
-			basic_light_tank_chassis = 1
-			improved_light_tank_chassis = 1
-			armor_tech_1 = 1
-			engine_tech_1 = 1
-		}
-	}
-
-	# These templates would otherwise not be unlocked
-	load_oob = "unlock_motorized"
-	load_oob = "unlock_tanks_mot"
-	
-	### FOCUS TREE ###
-	#1936
-	complete_national_focus = FIN_finnish_neutrality
-	complete_national_focus = FIN_enhance_southern_infrastructure
-	unlock_national_focus = FIN_industrial_development #Timed idea should be gone
-	unlock_national_focus = FIN_vaisala_radiosonde_tests #35 #tech bonus should be consumed
-	complete_national_focus = FIN_increase_military_budget #35
-	complete_national_focus = FIN_suomen_maavoimat
-
-	#1937
-	complete_national_focus = FIN_reach_out_to_scandinavia #35
-	complete_national_focus = FIN_moderate_politics #35
-	complete_national_focus = FIN_mannerheim_line
-	complete_national_focus = FIN_national_unity
-	complete_national_focus = FIN_outokumpu_for_defence_industry
-	complete_national_focus = FIN_industrial_upgrade_in_harjavalta #35
-	complete_national_focus = FIN_janiskoski_power_plant #35 (1938 historically)
-
-	#1938
-	complete_national_focus = FIN_political_unity
-	complete_national_focus = FIN_railways_and_infrastructure
-	complete_national_focus = FIN_repurpose_small_industries
-	complete_national_focus = FIN_extra_refresher_exercises # (ASAP - gated behind WT)
-	complete_national_focus = FIN_weapon_caches #35 (ASAP - gated behind WT)
-	complete_national_focus = FIN_the_cold_front #35
-	
-	#1939 (Nov -> Winter War)
-	complete_national_focus = FIN_defense_in_depth
-	complete_national_focus = FIN_jaeger_movement
-	complete_national_focus = FIN_salvaged_and_retooled
-	complete_national_focus = FIN_motti_tactics #35
-
-	# FOCUS ADJUSTMENTS
-
-	#FIN_industrial_development
-	remove_ideas = FIN_infrastructure_effort #Timed idea should be gone by 1939
-
-	#FIN_vaisala_radiosonde_tests
-	111 = {
-		add_extra_state_shared_building_slots = 1
-		add_building_construction = {
-			type = industrial_complex
-			level = 1
-			instant_build = yes
-		}
-	}
-
-	# BOP & COUNTRY LEADER ADJUSTMENTS
-	set_power_balance = {
-		id = FIN_power_balance
-		left_side = FIN_bad_side
-		right_side = FIN_good_side
-		set_value = 0 #Adding FIN_sisu_2 idea below
-	}
-	add_ideas = FIN_sisu_3
-
-	retire_country_leader = yes
-	#Set Maalaisliitto (Agrarian League) as Non-Aligned party
-	set_party_name = {
-		ideology = neutrality
-		name = FIN_neutrality_party
-		long_name = FIN_neutrality_party_long
-	}
-
-	oob = "FIN_1939"
-	if = {
-		limit = { has_dlc = "By Blood Alone" }
-			set_air_oob = "FIN_1939_air_bba"
-			set_technology = { 
-				bba_early_transport_plane = 1 
-			}
-		else = {
-			set_air_oob = "FIN_1939_air_legacy"
-			set_technology = {
-				early_fighter = 1
-				early_bomber = 1
-				CAS1 = 1		
-				early_transport_plane = 1
-			}
-		}
-	}
-}
-
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1931.3.2" #Represents Presidential elections (Country leader is President of the Republic, not Prime Minister)
@@ -625,7 +458,6 @@ add_stability = -0.1
 
 #Event for Svinhufvud's Term Ending
 country_event = { id = AAT_finland_political.02 days = 426 }
-
 
 1939.1.1 = {
 	set_politics = {
@@ -730,8 +562,6 @@ if = {
 	}
 }
 
-
-
 1939.1.1 = {
 	if = {
 		limit = {
@@ -767,4 +597,3 @@ if = {
 		}
 	}
 }
-

@@ -8,7 +8,6 @@ IF = {
 	set_war_support = 0.30 # People are beginning to lose heart a bit
 	set_oob = "ETH_1936_bba"
 
-	
 	# add_manpower = 60000 # have already called out the levy in 35
 	set_variable = { var_ETH_chitet_cooldown = 180 }
 	set_variable = { ETH.ETH_medal_xp_gain = 100 }
@@ -23,7 +22,6 @@ IF = {
 	set_variable = { ETH_buy_arms_from_host_cost = 20 }
 
 	set_variable = { ETH_re_enable_time_international_actions = 30 } # Timer for various interaction decisions
-
 
 	### Set variables for Dynamic Modifiers
 	
@@ -229,45 +227,6 @@ set_global_flag = second_italo_ethiopian_war_flag
 1936.05.05 = { clr_global_flag = second_italo_ethiopian_war_flag }
 
 set_convoys = 5
-
-1939.1.1 = {
-	#generic focuses
-	complete_national_focus = army_effort
-	complete_national_focus = equipment_effort
-	complete_national_focus = motorization_effort
-	complete_national_focus = aviation_effort
-	complete_national_focus = naval_effort
-	complete_national_focus = flexible_navy
-	complete_national_focus = industrial_effort
-	complete_national_focus = construction_effort
-	complete_national_focus = production_effort
-	
-	set_technology = {
-
-		#doctrines
-		grand_battle_plan = 1
-		trench_warfare = 1
-
-		#electronics
-		electronic_mechanical_engineering = 1
-		radio = 1
-		mechanical_computing = 1
-
-		#industry
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		advanced_machine_tools = 1
-		fuel_silos = 1
-		construction1 = 1
-		construction2 = 1
-		dispersed_industry = 1
-		dispersed_industry2 = 1
-	}
-	complete_special_project = {
-		project = sp:sp_air_radar
-	}
-}
-
 
 set_politics = {
 	ruling_party = neutrality

@@ -15,7 +15,6 @@ IF = {
 	set_oob = "CHL_1936"
 }
 
-
 IF = {
 	limit = { 
 		has_dlc = "Trial of Allegiance"
@@ -294,130 +293,6 @@ set_popularities = {
 }
 
 # Setting up 1939 oobs and focuses
-1939.1.1 = {
-
-	add_political_power = 1198
-	add_command_power = 100
-	
-	IF = {
-		limit = {
-			has_dlc = "Trial of Allegiance"
-		}
-		set_country_flag = CHL_1939_flag
-		set_global_flag = nacista_coup_attempt_happened
-		# Unique Focuses
-		complete_national_focus = CHL_endorse_the_constitution
-		complete_national_focus = CHL_policies_of_arturo_alessandri
-		complete_national_focus = CHL_construct_the_estadio_nacional
-		complete_national_focus = CHL_inflation_control_by_the_central_bank
-		complete_national_focus = CHL_suppress_the_nacistas
-		complete_national_focus = CHL_public_works
-		complete_national_focus = SMB_army
-		complete_national_focus = CHL_cooperation_with_the_falange
-		complete_national_focus = CHL_contract_efe
-		complete_national_focus = CHL_devalue_the_peso
-		complete_national_focus = SMB_navy
-		complete_national_focus = SMB_construct_naval_bases
-		complete_national_focus = CHL_expand_the_forestry
-		complete_national_focus = SMB_army_academy
-		complete_national_focus = SMB_regular_infantry
-		complete_national_focus = SMB_artillery
-		complete_national_focus = SMB_purchase_destroyers_and_subs
-		complete_national_focus = SMB_expand_repair_yards
-		complete_national_focus = SMB_foreign_designs
-		complete_national_focus = SMB_foreign_advisors
-		complete_national_focus = CHL_connect_the_northern_railways
-		complete_national_focus = CHL_establish_corfo
-		complete_national_focus = CHL_privatize_national_industries
-		complete_national_focus = CHL_strengthen_instituto_nacional
-		complete_national_focus = CHL_host_spanish_refugees
-
-		ELSE = {
-			# Generic Focuses
-			complete_national_focus = army_effort
-			complete_national_focus = equipment_effort
-			complete_national_focus = motorization_effort
-			complete_national_focus = aviation_effort
-			complete_national_focus = naval_effort
-			complete_national_focus = flexible_navy
-			complete_national_focus = industrial_effort
-			complete_national_focus = construction_effort
-			complete_national_focus = production_effort
-		}
-	}
-	
-	IF = {
-		limit = {
-			has_dlc = "Trial of Allegiance"
-		}
-		set_oob = "CHL_TOA_1939"
-	}
-	IF = {
-		limit = {
-			NOT = {
-				has_dlc = "Trial of Allegiance"
-			}
-		}
-		set_oob = "CHL_1939"
-	}
-	
-	IF = {
-		limit = { has_dlc = "Man the Guns" }
-			set_naval_oob = "CHL_1939_naval_mtg"
-		ELSE = {
-			set_naval_oob = "CHL_1939_naval_legacy"
-		}
-	}
-	IF = {
-		limit = { has_dlc = "By Blood Alone" }
-			set_air_oob = "CHL_1939_air_bba"
-		ELSE = {
-			set_air_oob = "CHL_1939_air_legacy"
-			set_technology = {
-				tactical_bomber1 = 1
-				CAS1 = 1
-			}
-		}
-	}
-
-	set_technology = {
-		interwar_artillery = 1
-		infantry_weapons1 = 1
-		infantry_weapons2 = 1
-		support_weapons = 1
-
-		#doctrines
-		air_superiority = 1
-		grand_battle_plan = 1
-		trench_warfare = 1
-		fleet_in_being = 1
-		battlefleet_concentration = 1
-		convoy_sailing = 1
-
-
-		#electronics
-		electronic_mechanical_engineering = 1
-		radio = 1
-		mechanical_computing = 1
-		computing_machine = 1
-
-		#industry
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		advanced_machine_tools = 1
-		synth_oil_experiments = 1
-		fuel_silos = 1
-		oil_processing = 1
-		improved_oil_processing = 1
-		construction1 = 1
-		construction2 = 1
-		dispersed_industry = 1
-		dispersed_industry2 = 1
-	}
-	complete_special_project = {
-		project = sp:sp_air_radar
-	}
-}
 
 # Setting up 1939 Politics
 1939.1.1 = {
