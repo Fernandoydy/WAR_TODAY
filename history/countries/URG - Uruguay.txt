@@ -1,4 +1,4 @@
-﻿capital = 300
+﻿capital = 968
 
 oob = "URG_1936"
 every_core_state = {

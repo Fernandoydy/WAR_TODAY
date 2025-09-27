@@ -437,7 +437,7 @@
  STATE_297: "Guiné Equatorial"
  STATE_298: "Libéria"
  STATE_299: "Ilhas Malvinas"
- STATE_300: "Montevidéu" #was uruguay
+ STATE_300: "Canelones" #was uruguay
  STATE_301: "Paraguai"
  STATE_302: "La Paz"
  STATE_303: "Lima"
@@ -1140,9 +1140,9 @@
  STATE_963: "Paraíba" #Amazon impassables
  STATE_964: "Amazônia" #impassables
  STATE_965: "Sergipe" #Amazon impassables
- STATE_966: "Amazônia" #impassables
+ STATE_966: "Distrito Federal" #Amazon impassables
  STATE_967: "Amazônia" #impassables
- STATE_968: "Amazônia" #impassables
+ STATE_968: "Montevidéu" #Amazon impassables
  STATE_969: "Roraima"
  STATE_970: "Debar"
  ALB_STATE_970: "Dibër"
