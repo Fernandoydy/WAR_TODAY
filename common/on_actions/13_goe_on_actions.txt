@@ -1,0 +1,893 @@
+
+on_actions = {
+	on_monthly_AFG = {
+		effect = {
+			IF = {
+				limit = {
+					has_completed_focus = AFG_electrification
+					any_core_state = {
+						NOT = { 
+							has_dynamic_modifier = { modifier = AFG_electrification_modifier }
+						}
+					}
+				}
+
+				IF = {
+					limit = {
+						check_variable = { AFG_electrification_cooldown > 0 }
+					}
+					set_variable = { AFG_electrification_cooldown = 0 }
+
+					random_core_state = {
+						limit = {
+							has_dynamic_modifier = { modifier = AFG_electrification_modifier }
+							NOT = {
+								OR = {
+									is_island_state = yes
+									has_state_category = small_island
+									has_state_category = tiny_island
+								}
+							}
+						}
+						random_neighbor_state = {
+							limit = {
+								NOT = {
+									has_dynamic_modifier = { modifier = AFG_electrification_modifier }
+								}
+								is_core_of = ROOT
+							}
+							add_dynamic_modifier = { modifier = AFG_electrification_modifier }
+						}
+					}
+				}
+				ELSE = {
+					add_to_variable = { AFG_electrification_cooldown = 1 }
+				}	
+			}
+		}
+	}
+
+	#ROOT is the nation being released, FROM is the overlord.
+	on_startup = {
+		#Achievement Related Arrays
+		effect = {
+			every_state = {
+				limit = {
+					OR = {
+						state = 731 #Central Macedonia
+						state = 184 #Thrace
+						state = 341 #Edirne
+						state = 164 #Dodecaneso/Rhodes
+						state = 183 #Cyprus
+						state = 231 #Georgia
+						state = 229 #Azerbaijan
+						state = 230 #Armenia
+						state = 451 #Derna
+						state = 450 #Benghasi
+						state = 663 #Cyrenaica
+						state = 584 #Ashkhabad
+						state = 832 #Tashauz
+						state = 831 #Khiva
+						state = 585 # Navoi
+						state = 442 #Peshawar
+
+						region = 129 #Asia Minor
+						region = 232 #Levant
+						region = 128 #Egypt
+						region = 28 #Middle East
+						region = 240 #Zagros
+						region = 239 #Alborz
+						region = 116 #Central Ira
+						region = 241 #Dasht-e Kav
+						region = 291 #Baluchistan
+						region = 289 #South AFG
+						region = 162 #North AFG
+						region = 269 #Samarkand
+						region = 190 #Pakistan
+					}
+				}
+				add_to_array = { PER.PER_achaemenid_empire_states = THIS }
+			}
+			every_state = {
+				limit = {
+					is_on_continent = middle_east
+				}
+				add_to_array = { global.GOE_middle_east_array = THIS }
+			}
+			every_state = {
+				limit = {
+					OR = {
+						#state = 442 #Peshawar
+						state = 787 #Northern Kashmir
+						state = 441 #Kashmir
+						state = 986 #East Punkab
+						state = 438 #United Provinces
+						state = 323 #Nepal
+						state = 985 #Sikkim
+						state = 431 #West Bengal
+						state = 324 #Bhutan
+						state = 432 #Assam
+						state = 434 #Arunachal Pradesh
+						state = 990 #Manipur
+					}
+				}
+				add_to_array = { AFG.AFG_himalaya_states_array = THIS }
+			}
+		}
+	}
+
+
+	on_release_as_puppet = {
+		effect = {
+		}
+	}
+
+	#	ROOT is the subject, FROM is the previous overlord.
+	on_subject_free = {
+	}
+
+	#fired when two countries end up at war with each other (on_war is fired when a country goes to war against anyone and is not fired again when it enters war against another country unless it went to peace first)
+	on_war_relation_added = {
+		effect = {
+			if = { 
+				limit = {
+					
+					FROM = {
+						original_tag = PER
+						has_country_flag = PER_sold_oil_flag
+					}
+					ROOT = { 
+						NOT = {
+							original_tag = PER
+						}
+						has_country_flag = PER_has_PER_resource_rights
+					}
+				}
+				ROOT = {
+					remove_resource_rights = 413
+				}
+				FROM = {
+					add_offsite_building = { type = industrial_complex  level = -3 }
+				}
+			}
+
+			if = {
+				limit = {
+					AND = {
+						ROOT = {
+							original_tag = PER
+							has_country_flag = PER_sold_oil_flag
+						}
+						FROM = { 
+							NOT = {
+								original_tag = PER
+							}
+							has_country_flag = PER_has_PER_resource_rights
+						}
+					}
+				}
+				FROM = {
+					remove_resource_rights = 413
+				}
+				ROOT = {
+					add_offsite_building = { type = industrial_complex  level = -3 }
+				}
+			}			
+		}
+		effect = {
+			# Will tidy this up with scripted effects someday (TM)
+			#It was in fact, not tidied up
+			IF = {
+				limit = {
+					OR = {
+						AND = {
+							FROM = { original_tag = AFG }
+							ROOT = { 
+								original_tag = SOU 
+								any_owned_state = {
+									has_dynamic_modifier = {
+										modifier = AFG_resistance_active_here
+									}
+								}
+							}
+						}
+						AND = {
+							ROOT = { original_tag = AFG }
+							FROM = { 
+								original_tag = SOU 
+								any_owned_state = {
+									has_dynamic_modifier = {
+										modifier = AFG_resistance_active_here
+									}
+								}
+							}
+						}
+					}
+				}
+				every_state = {
+					limit = {
+						is_owned_and_controlled_by = SOU
+						has_dynamic_modifier = {
+							modifier = AFG_resistance_active_here
+						}
+					}
+					OWNER = {
+						country_event = {
+							id = AFG_political_events.91
+							hours = 1
+						}
+					}
+					IF = {
+						limit = {
+							ROOT = { original_tag = AFG }
+						}
+						transfer_state_to = ROOT
+					}
+					ELSE = {
+						transfer_state_to = FROM
+					}
+				}
+				IF = {
+					limit = {
+						FROM = { original_tag = AFG }
+					}
+					IF = {
+						limit = {
+							any_owned_state = { 
+								is_core_of = UZB 
+								NOT = {
+									is_core_of = ROOT
+								}
+							}
+							UZB = { exists = no }
+						}
+						FROM = {
+							every_owned_state = {
+								limit = {
+									is_core_of = UZB
+									NOT = {
+										is_core_of = ROOT
+									}
+								}
+								transfer_state_to = UZB
+							}
+							puppet = UZB 
+							UZB = {
+								add_to_war = {
+									targeted_alliance = FROM 
+									enemy = ROOT 
+									hostility_reason = asked_to_join 
+									single_target_only = yes
+								}
+								AFG_create_puppet_army = yes
+							}
+						}
+					} 
+					IF = {
+						limit = {
+							any_owned_state = { 
+								is_core_of = TAJ 
+								NOT = {
+									is_core_of = ROOT
+								}
+							}
+							TAJ = { exists = no }
+						}
+						FROM = {
+							every_owned_state = {
+								limit = {
+									is_core_of = TAJ
+									NOT = {
+										is_core_of = ROOT
+									}
+								}
+								transfer_state_to = TAJ
+							}
+							puppet = TAJ
+							TAJ = {
+								add_to_war = {
+									targeted_alliance = FROM 
+									enemy = ROOT 
+									hostility_reason = asked_to_join 
+									single_target_only = yes
+								}
+								AFG_create_puppet_army = yes
+							}
+						}
+					} 
+					IF = {
+						limit = {
+							any_owned_state = { 
+								is_core_of = TMS 
+								NOT = {
+									is_core_of = ROOT
+								}
+							}
+							TMS = { exists = no }
+						}
+						FROM = {
+							every_owned_state = {
+								limit = {
+									is_core_of = TMS
+									NOT = {
+										is_core_of = ROOT
+									}
+								}
+								transfer_state_to = TMS
+							}
+							puppet = TMS
+							TMS = {
+								add_to_war = {
+									targeted_alliance = FROM 
+									enemy = ROOT 
+									hostility_reason = asked_to_join 
+									single_target_only = yes
+								}
+								AFG_create_puppet_army = yes
+							}
+						}
+					} 
+					IF = {
+						limit = {
+							any_owned_state = { 
+								is_core_of = KYR 
+								NOT = {
+									is_core_of = ROOT
+								}
+							}
+							KYR = { exists = no }
+						}
+						FROM = {
+							every_owned_state = {
+								limit = {
+									is_core_of = KYR
+									NOT = {
+										is_core_of = ROOT
+									}
+								}
+								transfer_state_to = KYR
+							}
+							puppet = KYR
+							KYR = {
+								add_to_war = {
+									targeted_alliance = FROM 
+									enemy = ROOT 
+									hostility_reason = asked_to_join 
+									single_target_only = yes
+								}
+								AFG_create_puppet_army = yes
+							}
+						}
+					} 
+				}
+				ELSE_IF = {
+					limit = {
+						ROOT = { original_tag = AFG }
+					}
+					IF = {
+						limit = {
+							any_owned_state = { 
+								is_core_of = UZB 
+								NOT = {
+									is_core_of = ROOT
+								}
+							}
+							UZB = { exists = no }
+						}
+						ROOT = {
+							every_owned_state = {
+								limit = {
+									is_core_of = UZB
+									NOT = {
+										is_core_of = ROOT
+									}
+								}
+								transfer_state_to = UZB
+							}
+							puppet = UZB
+							UZB = {
+								add_to_war = {
+									targeted_alliance = ROOT 
+									enemy = FROM 
+									hostility_reason = asked_to_join 
+									single_target_only = yes
+								}
+								AFG_create_puppet_army = yes
+							}
+						}
+					} 
+					IF = {
+						limit = {
+							any_owned_state = { 
+								is_core_of = TAJ 
+								NOT = {
+									is_core_of = ROOT
+								}
+							}
+							TAJ = { exists = no }
+						}
+						ROOT = {
+							every_owned_state = {
+								limit = {
+									is_core_of = TAJ
+									NOT = {
+										is_core_of = ROOT
+									}
+								}
+								transfer_state_to = TAJ
+							}
+							puppet = TAJ
+							TAJ = {
+								add_to_war = {
+									targeted_alliance = ROOT 
+									enemy = FROM 
+									hostility_reason = asked_to_join 
+									single_target_only = yes
+								}
+								AFG_create_puppet_army = yes
+							}
+						}
+					} 
+					IF = {
+						limit = {
+							any_owned_state = { 
+								is_core_of = TMS 
+								NOT = {
+									is_core_of = ROOT
+								}
+							}
+							TMS = { exists = no }
+						}
+						ROOT = {
+							every_owned_state = {
+								limit = {
+									is_core_of = TMS
+									NOT = {
+										is_core_of = ROOT
+									}
+								}
+								transfer_state_to = TMS
+							}
+							puppet = TMS
+							TMS = {
+								add_to_war = {
+									targeted_alliance = ROOT 
+									enemy = FROM 
+									hostility_reason = asked_to_join 
+									single_target_only = yes
+								}
+								AFG_create_puppet_army = yes
+							}
+						}
+					} 
+					IF = {
+						limit = {
+							any_owned_state = { 
+								is_core_of = KYR 
+								NOT = {
+									is_core_of = ROOT
+								}
+							}
+							KYR = { exists = no }
+						}
+						ROOT = {
+							every_owned_state = {
+								limit = {
+									is_core_of = KYR
+									NOT = {
+										is_core_of = ROOT
+									}
+								}
+								transfer_state_to = KYR
+							}
+							puppet = KYR
+							KYR = {
+								add_to_war = {
+									targeted_alliance = ROOT 
+									enemy = FROM 
+									hostility_reason = asked_to_join 
+									single_target_only = yes
+								}
+								AFG_create_puppet_army = yes
+							}
+						}
+					} 
+				}
+			}
+		}
+	}
+
+	on_peace = {
+	}
+
+	#FROM is war target
+	#ROOT is country declaring war
+	on_declare_war = {
+		effect = {
+			IF = {
+				limit = {
+					has_dlc = "Graveyard of Empires"
+					AND = {
+						OR = {
+							FROM = {
+								original_tag = AFG
+								has_country_flag = AFG_signed_oil_deal_flag
+							}
+							ROOT = {
+								original_tag = AFG
+								has_country_flag = AFG_signed_oil_deal_flag
+							}
+						}
+						OR = {
+							FROM = {
+								has_country_flag = made_oil_deal_with_afg_flag
+							}
+							ROOT = {
+								has_country_flag = made_oil_deal_with_afg_flag
+							}
+						}
+					}	
+				}
+				IF = {
+					limit = {
+						FROM = {
+							has_country_flag = made_oil_deal_with_afg_flag
+						}
+					}
+					FROM = {
+						country_event = {
+							id = AFG_industrial_events.16
+							hours = 1
+						}
+						remove_resource_rights = 267
+					}
+				}
+				ELSE = {
+					ROOT = {
+						country_event = {
+							id = AFG_industrial_events.16
+							hours = 1
+						}
+						remove_resource_rights = 267
+					}
+				}
+			}
+			#Picking out who is the leader in a war when invading Iran
+			IF = {
+				limit = {
+					FROM = { 
+						original_tag = PER 
+						NOT = {
+							has_country_flag = PER_has_been_invaded
+						}
+					}
+					has_dlc = "Graveyard of Empires"
+				}
+				ROOT = {
+					set_country_flag = PER_invading_country_flag
+				}
+				FROM = {
+					hidden_effect = {
+						set_country_flag = PER_has_been_invaded
+					}
+				}
+			}
+		}
+	}
+
+	on_subject_free = {
+		effect = {
+			##ROOT is subject FROM is previous overlord
+			if = {
+				limit = {
+					OR = {
+						ROOT = {
+							original_tag = PAK
+						}
+					}
+				}
+			}
+		}
+	}
+
+	#ROOT is capitulated country, FROM is winner.
+	on_capitulation_immediate = {
+		#Capitulations Pertaining to Achievements
+		effect = {
+			if = {
+				limit = {
+					ROOT = {
+						OR = {
+							original_tag = AFG
+							original_tag = IRQ
+							original_tag = PER
+						}
+					}
+					FROM = {
+						OR = {
+							#any_other_country = {
+							#	is_in_faction_with = FROM
+							#}
+							original_tag = AFG
+							original_tag = IRQ
+							original_tag = PER
+						}
+					}
+				}
+				if = {
+					limit = {
+						ROOT = {
+							original_tag = AFG
+						}
+					}
+					FROM = {
+						set_country_flag = GOE_capitulated_AFG
+					}
+				}
+				if = {
+					limit = {
+						ROOT = {
+							original_tag = IRQ
+						}
+					}
+					FROM = {
+						set_country_flag = GOE_capitulated_IRQ
+					}
+				}
+				if = {
+					limit = {
+						ROOT = {
+							original_tag = PER
+						}
+					}
+					FROM = {
+						set_country_flag = GOE_capitulated_PER
+					}
+				}
+			}
+			if = {
+				limit = {
+					ROOT = {
+						original_tag = SOV
+					}
+					FROM = {
+						original_tag = AFG
+					}
+				}
+				FROM = {
+					set_country_flag = AFG_capitulated_Soviet
+				}
+			}
+			if = {
+				limit = {
+					ROOT = {
+						tag = POL
+					}
+				}
+				ROOT = {
+					set_country_flag = POL_has_capitulated_flag
+				}
+			}
+			if = {
+				limit = {
+					ROOT = {
+						original_tag = SAU
+					}
+					FROM = {
+						original_tag = IRQ
+					}
+				}
+				FROM = {
+					set_country_flag = IRQ_capitulated_SAU
+				}
+			}
+		}
+		effect = {
+		}
+	}
+
+	#ROOT is new controller, FROM is old controller, FROM.FROM is state ID.
+	on_state_control_changed = {
+	}
+
+	#FROM is faction leader on join faction requests. THIS DOES NOT FIRE ON ADD_TO_FACTION EFFECT! USE ON_OFFER_JOIN_FACTION!
+	ON_OFFER_JOIN_FACTION = { 
+		effect = { # Adding the correct stuff for faction joiners for the AH joint focus tree
+			IF = {
+				limit = {
+					has_dlc = "Graveyard of Empires"
+					FROM = {
+						original_tag = AFG
+						has_idea = neutrality_idea
+					}
+				}
+				FROM = {
+					remove_ideas = {
+						idea = neutrality_idea
+					}
+				}
+			}
+		}
+	}
+
+	#ROOT is sender, FROM is receiver.
+	on_send_volunteers = {
+		effect = {
+			if = {
+				ROOT = { 
+					add_to_array = { pmc_recievers = FROM }
+					log = "[FROM.GetName]"
+					add_to_array = { pmc_timer = 77 } #in weeks 
+					add_offsite_building = {
+						type = industrial_complex
+						level = 1
+					}
+				}
+			}
+		}
+	}
+
+	on_monthly_PER = {
+		effect = {
+			IF = {
+				limit = {
+					AND = {
+						kurdistan_exists = no
+						1000 = {
+							is_owned_by = SOU
+						}
+						420 = {
+							is_owned_by = SOU
+						}
+						419 = {
+							is_owned_by = SOU
+						}
+						SOU = {
+							has_government = communism
+						}
+					}
+				}
+				SOU = {
+					country_event = {
+						id = PER_communist_events.20
+						hours = 1
+					}
+				}
+			}
+		}
+	}
+
+	on_monthly_PAL = {
+		effect = {
+			IF = {
+				limit = {
+					date > 1936.3.1
+					OR = {
+						PAL = {
+							exists = yes
+							is_subject_of = ENG
+						}
+						454 = {
+							is_owned_by = ENG
+						}
+					}
+					NOT = { has_global_flag = the_1936_PAL_revolt_has_happened }
+				}
+				every_country = {
+					limit = {
+						OR = {
+							tag = ENG
+							capital_scope = {
+								is_on_continent = middle_east
+							}
+						}
+					}
+					news_event = {
+						id = GOE_IRQ_news.1
+						days = 19
+					}
+				}
+				set_global_flag = the_1936_PAL_revolt_has_happened
+			}
+		}
+	}
+
+	on_release_as_puppet = {
+	}
+
+	on_capitulation = {
+	}
+
+	on_subject_annexed = {
+	}
+
+	on_subject_free = {
+	}
+
+	on_declare_war = {
+		effect = {
+			IF = {
+				limit = {
+					OR = {
+						tag = IRQ
+						tag = AFG
+						tag = PER
+						tag = TUR
+					}
+					has_dynamic_modifier = { modifier = SSB_saadabad_pact }
+					OR = {
+						AND = {
+							FROM = { tag = PER }
+							PER = { has_dynamic_modifier = { modifier = SSB_saadabad_pact} }
+						}
+						AND = {
+							FROM = { tag = TUR }
+							TUR = { has_dynamic_modifier = { modifier = SSB_saadabad_pact} }
+						}
+						AND = {
+							FROM = { tag = AFG }
+							AFG = { has_dynamic_modifier = { modifier = SSB_saadabad_pact} }
+						}
+						AND = {
+							FROM = { tag = IRQ }
+							IRQ = { has_dynamic_modifier = { modifier = SSB_saadabad_pact} }
+						}
+					}
+				}
+				custom_effect_tooltip = SSB_you_will_lose_the_bonus_tt
+				hidden_effect = {
+					remove_dynamic_modifier = { modifier = SSB_saadabad_pact }
+					PER = {
+						if = {
+							limit = { has_dynamic_modifier = { modifier = SSB_saadabad_pact } }
+							country_event = {
+								id = PER_SSB_events.8
+								hours = 12
+							}
+						}
+					}
+					AFG = {
+						if = {
+							limit = { has_dynamic_modifier = { modifier = SSB_saadabad_pact } }
+							country_event = {
+								id = PER_SSB_events.8
+								hours = 12
+							}
+						}
+					}
+					IRQ = {
+						if = {
+							limit = { has_dynamic_modifier = { modifier = SSB_saadabad_pact } }
+							country_event = {
+								id = PER_SSB_events.8
+								hours = 12
+							}
+						}
+					}
+					TUR = {
+						if = {
+							limit = { has_dynamic_modifier = { modifier = SSB_saadabad_pact } }
+							country_event = {
+								id = PER_SSB_events.8
+								hours = 12
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	on_annex = {
+		effect = {
+			if = {
+				limit = {
+					FROM = {
+						has_country_flag = IRQ_has_become_kurdistan_flag
+					}
+				}
+				clr_global_flag = kurdistan_exists_flag
+			}
+		}
+	}
+}

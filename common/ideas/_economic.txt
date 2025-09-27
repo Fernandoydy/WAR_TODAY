@@ -728,9 +728,6 @@ ideas = {
 							}
 						}
 					}
-					else = {
-						hidden_trigger = { always = no } #NEED TO HAVE AN ALWAYS AS AN END STATEMENT IF URE USING AN IF ELSE IN AN OR STATEMENT OTHERWISE THE EVALUATION BREAKS!!
-					}
 				}
 			}
 
@@ -786,10 +783,6 @@ ideas = {
 				modifier = { #Germany should keep its Autarkic Economy
 					factor = 0.5
 					original_tag = GER
-					OR = {
-						has_idea = autarkic_economy
-						has_idea = autarkic_economy_improved
-					}
 				}
    			}
 		}
@@ -877,10 +870,6 @@ ideas = {
 					factor = 0.5
 					original_tag = GER
 					is_in_faction = yes
-					OR = {
-						has_idea = autarkic_economy
-						has_idea = autarkic_economy_improved
-					}
 				}
    			}
 		}

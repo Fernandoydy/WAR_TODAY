@@ -1680,7 +1680,6 @@ focus_tree = {
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			custom_effect_tooltip = GER_gain_autarkic_economy_lock_free_trade_tt
-			add_ideas = autarkic_economy
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
@@ -2436,16 +2435,9 @@ focus_tree = {
 			custom_effect_tooltip = generic_skip_one_line_tt
 			if = {
 				limit = { #Notify that you will get an improved version of the Trade Law
-					NOT = { has_idea = autarkic_economy }
 				}
 				custom_effect_tooltip = GER_improve_autarkic_economy_tt
 			}
-			else = { #Get the improved version of the Trade Law
-				swap_ideas = {
-					remove_idea = autarkic_economy
-					add_idea = autarkic_economy_improved
-				}
-			}			
 
 			#custom_effect_tooltip = generic_skip_one_line_tt
 

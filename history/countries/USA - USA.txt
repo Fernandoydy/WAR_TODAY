@@ -376,7 +376,6 @@ set_popularities = {
 }
 
 add_ideas = {
-	undisturbed_isolation
 	great_depression
 	disarmed_nation
 	free_trade

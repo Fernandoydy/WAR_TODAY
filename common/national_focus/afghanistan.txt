@@ -3779,11 +3779,6 @@ focus_tree = {
 		}
 		available = {
 			has_civil_war = no
-			RAJ = {
-				NOT = {
-					has_completed_focus = RAJ_look_to_the_past
-				}
-			}
 			is_subject = no
 			has_government = neutrality
 		}
@@ -4253,8 +4248,6 @@ focus_tree = {
 
 		completion_reward = {
 
-			try_build_civ_in_core_otherwise_build_in_controlled_2_civs = yes
-
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			IF = {
@@ -4502,8 +4495,6 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_MANPOWER FOCUS_FILTER_ARMY_XP }
 
 		completion_reward = {
-
-			try_build_mil_in_core_otherwise_build_in_controlled_2_mil = yes
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 

@@ -1603,9 +1603,6 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-			unlock_mio_policy_tooltip = {
-				policy = mio_policy_NOR_general_permanent_industrial_revolution
-			}
 			mio:NOR_thunes_mekaniske_verksted_organization ={
 				add_mio_funds = 1000
 			}
